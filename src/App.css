@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Subrayada&family=Montserrat:wght@200&display=swap');
+@font-face {
+  font-family: 'belladona';
+  src: url('/src/assets/Odachi/Webfont/Odachi.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+a{
+  font-family: 'Montserrat subrayada';
+  text-decoration: none;
+}
+.textkrona{
+  font-family: 'Krona One';
+}
+h2{
+  font-family: 'Krona One';
+}
+.glass{
+  background-color:rgba(255, 255, 255, 0.048);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: 1s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.13);
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color:rgba(255, 255, 255, 0.048);
+  cursor: pointer;
+  padding: 2%;
+}
+.btn:hover{
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.233);
+  transform: scale(1.08);
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-image: url('/src/assets/1.jpg');
+  background-size:cover;
+}
+header:before{
+  background: linear-gradient(to right, rgba(185, 0, 241, 0.233),#fe00483d);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.resumes{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4%;
+  width: 45%;
+  height: 20%;
+  position: absolute;
+  bottom: 8%;
+  left: 2%;
+}
+.resume{
+  background-color:#fe004a;
+  text-align: center;
+  cursor: pointer;
+}
+.btns-header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4%;
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  bottom: 8%;
+  right: 2%;
+}
+.header-switch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  background-color:#141414;
+  cursor: pointer;
+}
+.header-switch:hover{
+  transform: scale(1.08);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  padding: 0 3%;
+  padding-left: 5%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+  font-family: 'Montserrat Subrayada';
+  z-index: 10;
+}
+.nav__btns{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+.nav__btn-e{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 70%;
+  border-radius: .6rem;
+  padding: 2%;
+  margin: 0 2%;
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav__btn-e:hover{
+  background-color:rgba(255, 255, 255, 0.048);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: .1s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.13);
+}
+#root{
+  
+  background: rgb(20, 20, 20);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+}
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.divider-main{
+  background-color: #141414;
+}
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+.custom-shape-divider-bottom .shape-fill{
+  fill:#fe004a;
+}
+main{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 68%;
+
+  
+}
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+h1{
+  font-family: 'Krona One';
+  font-size: 3.5rem;
+  padding: 5% ;
+}
+h1 span{
+  color: #fe004a;
+}
+.welcome h2{
+  display: inline-flex;
+  justify-content:flex-start;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-weight: 200;
+
+}
+.aboutme{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: #fe004a;
+}
+.divider-aboutme{
+  background-color: #fe004a;
+}
+.divider-aboutme .shape-fill{
+  fill: #141414;
+}
+.aboutme-title{
+  position: absolute;
+  bottom: -5%;
+}
+.aboutme p{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.aboutme #projects-aboutme{
+  color: #141414;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  font-family: 'Montserrat Subrayada';
+  text-decoration: none;
+}
+.aboutme #projects-aboutme:hover{
+  color: white;
+}
+.aboutme-connect{
+  position: absolute;
+  display: inline-flex;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.233);
+  bottom: 15%;
+}
+.slider{
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 70%;
+}
+.slider h2{
+  margin: 5% 0;
+}
+.slider-cont{
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 70%;
+  overflow: hidden;
+}
+.grab-band{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  width: 280%;
+  cursor: grab;
+}
+.grab-band:active{cursor: grabbing;}
+.item-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 40rem;
+  margin: 0% 1%;
+  object-fit:cover;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.skills{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.skills h2{
+  width: 50%;
+  text-align: center;
+  margin: 3% 0;
+}
+.skills > a{
+  width: 60%;
+  margin: 10%;
+  text-align: center;
+}
+.divider-skills{
+  background-color:#14141400 ;
+}
+.divider-skills .shape-fill{
+  fill: #fe004a;
+}
+.stacklist{
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+}
+.tech{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 10rem;
+  height: 8rem;
+  margin: 2%;
+  border-radius: 1rem;
+  background-color: #141414;
+  transition: all .1s linear;
+}
+.tech a{
+  display: none;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 2s ease-out ;
+  transition-delay: .2s;
+  color: #fe004a;
+}
+.tech h2{
+  display: none;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 2s ease-out ;
+  transition-delay: .2s;
+  color: #fe004a;
+}
+.tech:hover svg{
+  display: none;
+
+}
+.tech:hover h2{
+  display: flex;
+  opacity: 1;
+}
+.tech:hover a{
+  display: flex;
+  opacity: 1;
+}
+.tech:hover{
+  border: 3px solid #fe004a;
+}
+.contact{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 100%;
+  height: 80%;
+  background-color:#fe004a;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 4rem;
+}
+.form{
+  width: 50%;
+  height: 90%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: 'Krona One';
+  font-weight: 600;
+}
+form label{
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  padding: .5rem;
+}
+.inputform{
+  width: 100%;
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: .3rem;
+  padding: 2%;
+  margin: 1% 0;
+  color: #2b2b2bda;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  transition: all .2s ease-in;
+}
+.inputform:hover{
+  transform: scale(1.02);
+}
+form label span{
+  width: 30%;
+  text-align: start;
+}
+
+form textarea{
+  min-width: 100%;
+  min-height: 8rem;
+  max-height: 15rem;
+  padding: 1%;
+  border: none;
+  border-radius: .3rem;
+  margin: 1% 0;
+  outline: none;
+  color: #2b2b2bda;
+  font-weight: 600;
+  font-family: 'Montserrat';
+}
+form #button{
+  width: auto;
+  height: 6%;
+  padding: 1% 2%;
+  background-color: #141414;
+  border: none;
+  border-radius: .2rem;
+  margin: 0 20%;
+}
+form #button:hover{
+  transform: scale(1.03);
+}
+form #button:active{
+
+}
+.copy{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 10%;
+}
+.copyarea{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 30%;
+}
+.copy h2{
+  width: 100%;
+  text-align: center;
+}
+.copycont{
+  position: relative;
+  width: 30%;
+  height: 50%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #141414;
+}
+.copycont:hover{
+  transform: scale(1.04);
+}
+.copybtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  background-color: #141414;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.copycheck{
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7%;
+  position: absolute;
+  right: 0%;
+  border: #141414 2px solid;
+  transition: all.3s ease-out;
+  border-radius: 0 1rem  1rem 0;
+}
+.copycheck svg path{
+  fill: #141414;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: #141414;
+}
+.container{
+  position:absolute;
+}
+.title{
+ 
+  background-position: 40% 50%;
+
+
+}
+.subtitle{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:10px;
+}

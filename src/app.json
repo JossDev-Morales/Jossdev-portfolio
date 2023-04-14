@@ -1,0 +1,262 @@
+{
+  "en": {
+    "about": {
+      "text": "I'm a inveterate developer, I'm 20 years old, I love programming, imagining and building things, I'm looking for the opportunity to develop amazing things, maybe we can do it together...",
+      "button": "Let's connect",
+      "link": "My projects",
+      "title": "About me"
+    },
+    "resumes": {
+      "en": {
+        "title": "Resume"
+      },
+      "es": {
+        "title": "Resume"
+      }
+    },
+    "nav": {
+      "btn1": "Home",
+      "btn2": "Projects",
+      "btn3": "Certifications"
+    },
+    "built": {
+      "title": "Hey, look what i built"
+    },
+    "stack": {
+      "title": "Stack",
+      "link": "Go to certifications",
+      "techs": [
+        {
+          "color": "#20232a",
+          "route": "logos:javascript",
+          "title": "Java Script",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "vscode-icons:file-type-reactjs",
+          "title": "React",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:redux",
+          "title": "Redux",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#5a29e4",
+          "route": "simple-icons:axios",
+          "title": "Axios",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:react-router",
+          "title": "React router",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "vscode-icons:file-type-css",
+          "title": "Css",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:tailwindcss-icon",
+          "title": "Tailwind",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:bootstrap",
+          "title": "Botstrap",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "vscode-icons:file-type-html",
+          "title": "Html",
+          "link": "https://reactjs.org/"
+        }
+      ]
+    },
+    "contact": {
+      "phone": "695-1172893",
+      "mail": "thejosuescript@gmail.com",
+      "discord": "http://discordapp.com/users/564970023479934977",
+      "linkedin": "https://www.instagram.com/sirius.js/",
+      "instagram": "https://www.instagram.com/sirius.js/",
+      "github": "https://github.com/sirius-JS/"
+    },
+    "form": {
+      "title": "Send me a message",
+      "button": "Get in touch",
+      "inputs": {
+        "name": "Name",
+        "mail": "Mail",
+        "message": "Message",
+        "holder": "Type your message here, I will receive it and I will contact you"
+      },
+      "gets": {
+        "mail": "Send me a mail",
+        "number": "Get my number"
+      }
+    },
+    "certifications": [],
+    "projects": {
+      "pagetitle": "My Projects",
+      "overview": "Welcome too my projects section, here you can find some of my work, im currently working to grow up my portfolio.",
+      "span": "Have fun",
+      "tagbtns": [
+        "all",
+        "Js React",
+        "Js Vanilla"
+      ],
+      "list": []
+    }
+  },
+  "es": {
+    "about": {
+      "text": "Soy un desarrollador empedernido, tengo 20 años, me encanta programar, imaginar y construir cosas, busco la oportunidad de desarrollar cosas increíbles, tal vez podamos hacerlo juntos...",
+      "button": "Conectemonos",
+      "link": "Mis proyectos",
+      "title": "Acerca de mi"
+    },
+    "resumes": {
+      "en": {
+        "title": "CVitae"
+      },
+      "es": {
+        "title": "Cvitae"
+      }
+    },
+    "nav": {
+      "btn1": "Inicio",
+      "btn2": "Projectos",
+      "btn3": "Certificaciones"
+    },
+    "built": {
+      "title": "Hey, mira lo que construi"
+    },
+    "stack": {
+      "title": "Tecnologias",
+      "link": "Ir a las certificaciones",
+      "techs": [
+        {
+          "color": "#20232a",
+          "route": "logos:javascript",
+          "title": "Java Script",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "vscode-icons:file-type-reactjs",
+          "title": "React",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:redux",
+          "title": "Redux",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#5a29e4",
+          "route": "simple-icons:axios",
+          "title": "Axios",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:react-router",
+          "title": "React router",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "vscode-icons:file-type-css",
+          "title": "Css",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:tailwindcss-icon",
+          "title": "Tailwdind",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "logos:bootstrap",
+          "title": "Botstrap",
+          "link": "https://reactjs.org/"
+        },
+        {
+          "color": "#20232a",
+          "route": "vscode-icons:file-type-html",
+          "title": "Html",
+          "link": "https://reactjs.org/"
+        }
+      ]
+    },
+    "contact": {
+      "phone": "695-1172893",
+      "mail": "thejosuescript@gmail.com",
+      "discord": "http://discordapp.com/users/564970023479934977",
+      "linkedin": "https://www.instagram.com/sirius.js/",
+      "instagram": "https://www.instagram.com/sirius.js/",
+      "github": "https://github.com/sirius-JS/"
+    },
+    "form": {
+      "title": "Enviame un mensaje",
+      "button": "Contactame",
+      "inputs": {
+        "name": "Nombre",
+        "mail": "Correo",
+        "message": "Mensaje",
+        "holder": "Escribe tu mensaje aqui, lo recibire y te contactare"
+      },
+      "gets": {
+        "mail": "Enviame un mail",
+        "number": "Obten mi numero"
+      }
+    },
+    "certifications": {
+      "list": []
+    },
+    "projects": {
+      "pagetitle": "Mis Proyectos",
+      "overview": "Bienvenido a mi sección de proyectos, aquí podrás encontrar algunos de mis trabajos, actualmente estoy trabajando para hacer crecer mi portafolio.",
+      "span": "Diviertete",
+      "tagbtns": [
+        "Todos",
+        "Js React",
+        "Js Vanilla"
+      ],
+      "list": [
+        {
+          "info":{
+            "deploy":"Vamos",
+            "repository":"Repositorio",
+            "services":"Servicios usados"
+          },
+          "title":"My Commerce",
+          "category":"MPA",
+          "description":"My commerce es un proyecto academico, fue desarrollado con la idea de practicar react y la comunicacion con el servidor llevando a cabo CRUD para el manejo de clientes de un e-commerce o tienda online, implemente mas servicion y caracteristicas que las que se proponian en el pryecto inicial, como el manejo de imagenes de avatars y la capacidad de cambiar la informacion del cliente y brindar una mejor experiencia.",
+          "deploy":"https://my-commerce-tech.netlify.app/",
+          "repository":"https://github.com/JossDev-Morales/Ecommerce--final",
+          "stacklist":["React","Redux","Axios","React router","Tailwind"],
+          "services":[
+            {"name":"Firebase","link":"https://firebase.google.com/"},
+            {"name":"Unsplash API","link":"https://unsplash.com/developers"},
+            {"name":"jsonbin.io","link":"https://jsonbin.io/api-reference"}
+          ],
+          "image":""
+
+        }
+      ]
+    }
+  }
+}
+  
