@@ -9,15 +9,21 @@ import { faCheck, faCopy } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Form from '../components/Form'
 function Root() {
-    const data=useSelector(state=>state.Content)
-    return(
+    const data = useSelector(state => state.Content)
+    return (
         <>
-            <Navigation/>
-            <Header/>
+            <Navigation />
+            <Header />
             <main>
                 <div className="welcome">
+                    <div className="socials">
+                        <div className="icon"><Icon icon="ri:linkedin-fill" color="white" /></div>
+                        <div className="icon"><Icon icon="ph:github-logo-fill" color="white" /></div>
+                        <div className="icon"><Icon icon="mdi:twitter" color="white" /></div>
+                        <div className="icon"><Icon icon="ic:baseline-discord" color="white" /></div>
+                    </div>
                     <h1><span>Hi</span>,<br /> Im Josué Morales</h1>
-                    <h2>Front Web Developer Jr{}</h2>
+                    <h2>Front Web Developer Jr{ }</h2>
                 </div>
 
                 <div className={`custom-shape-divider-bottom divider-main`} >
@@ -28,86 +34,86 @@ function Root() {
             </main>
             <div className="aboutme">
                 <p>
-                {data.about?.text}
+                    {data.about?.text}
                 </p>
                 <a href='#connect' className="btn aboutme-connect">{data.about?.button}</a>
                 <Link id='projects-aboutme' to={'/projects'}>{data.about?.link}</Link>
-            <div className={`custom-shape-divider-bottom divider-aboutme`} >
+                <div className={`custom-shape-divider-bottom divider-aboutme`} >
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
                     </svg>
-            </div>
+                </div>
             </div>
             <div className="slider" >
                 <h2>{data.built?.title}</h2>
                 <motion.div className="slider-cont" title='just drag on me'>
                     <motion.div title='just drag on me'
-                    drag dragConstraints={{top:0 ,bottom:0 ,right:0,left:-(window.innerWidth*138/100)}} 
-                    className="grab-band">
-                        {images.map((image)=>(<img key={image} src={image} alt="Project image" className='item-slider'/>))}
+                        drag dragConstraints={{ top: 0, bottom: 0, right: 0, left: -(window.innerWidth * 138 / 100) }}
+                        className="grab-band">
+                        {images.map((image) => (<img key={image} src={image} alt="Project image" className='item-slider' />))}
                     </motion.div>
                 </motion.div>
             </div>
             <div className="skills">
-            <h2 className='textkrona'>{data.stack?.title}</h2>
-            <div className="stacklist">{data.stack?.techs.map(element=>(
-                <div 
-                key={element.title}
-                className='tech'>
-                    <h2>{element.title}</h2>
-                    <a href={element.link} target="_blank">Docs</a>
-                    <Icon icon={element.route} width="100"/>
+                <h2 className='textkrona'>{data.stack?.title}</h2>
+                <div className="stacklist">{data.stack?.techs.map(element => (
+                    <div
+                        key={element.title}
+                        className='tech'>
+                        <h2>{element.title}</h2>
+                        <a href={element.link} target="_blank">Docs</a>
+                        <Icon icon={element.route} width="100" />
+                    </div>
+                ))}
                 </div>
-            ))}
-            </div>
-            <Link to={"/certifications"}>{data.stack?.link}</Link>
-            <div className={`custom-shape-divider-bottom divider-skills`} >
+                <Link to={"/certifications"}>{data.stack?.link}</Link>
+                <div className={`custom-shape-divider-bottom divider-skills`} >
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
                     </svg>
-            </div>
+                </div>
             </div>
             <div className="contact">
-                <Form data={data}/>
+                <Form data={data} />
                 <div className="copy">
                     <div className="copyarea">
                         <h2>{data.form?.gets.number}</h2>
-                        <div className="copycont" onClick={(event)=>{
+                        <div className="copycont" onClick={(event) => {
                             navigator.clipboard.writeText(data.contact.phone)
-                            document.getElementById("copycheck1").style.setProperty("right","-23%")
-                            setTimeout(()=>{
-                                document.getElementById("copycheck1").style.setProperty("right","0%")
-                            },700)
+                            document.getElementById("copycheck1").style.setProperty("right", "-23%")
+                            setTimeout(() => {
+                                document.getElementById("copycheck1").style.setProperty("right", "0%")
+                            }, 700)
                         }}>
                             <div id='copycheck1' className="copycheck">
-                                <FontAwesomeIcon icon={faCheck}/>
+                                <FontAwesomeIcon icon={faCheck} />
                             </div>
-                            <div className="copybtn">
+                            <motion.div whileTap={{ scale: 0.7 }} className="copybtn">
                                 <FontAwesomeIcon icon={faCopy} />
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                     <div className="copyarea">
                         <h2>{data.form?.gets.mail}</h2>
-                        <div className="copycont" onClick={(event)=>{
+                        <div className="copycont" onClick={(event) => {
                             navigator.clipboard.writeText(data.contact.mail)
-                            document.getElementById("copycheck2").style.setProperty("right","-23%")
-                            setTimeout(()=>{
-                                document.getElementById("copycheck2").style.setProperty("right","0%")
-                            },700)
+                            document.getElementById("copycheck2").style.setProperty("right", "-23%")
+                            setTimeout(() => {
+                                document.getElementById("copycheck2").style.setProperty("right", "0%")
+                            }, 700)
                         }}>
                             <div id='copycheck2' className="copycheck">
-                                <FontAwesomeIcon icon={faCheck}/>
+                                <FontAwesomeIcon icon={faCheck} />
                             </div>
-                            <div className="copybtn">
+                            <motion.div whileTap={{ scale: 0.7 }} className="copybtn">
                                 <FontAwesomeIcon icon={faCopy} />
-                            </div>
-                        </div>     
+                            </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>
             <footer>
-
+                <a href='#'><p>Code by Joss<span>Dev</span></p><div className="social_icon"><Icon icon="ph:github-logo-fill" color="white" /></div></a>
             </footer>
-            
+
         </>
     )
 }

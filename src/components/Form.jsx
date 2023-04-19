@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import {motion} from 'framer-motion'
 
 function Form({data}) {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -36,7 +37,7 @@ function Form({data}) {
             <span>{data.form?.inputs.message}</span>
             <textarea {...register("message",{required:true})} placeholder={data.form?.inputs.holder} className='textareaform' id="message" cols="30" rows="10"></textarea>
         </label>
-      <input id="button" type="submit"  value={data.form?.button}/>
+      <motion.input whileTap={{scale:1.1}} id="button" type="submit"  value={data.form?.button}/>
     </form>
         </div>
     )

@@ -207,6 +207,16 @@ h1 span{
   font-weight: 200;
 
 }
+.social_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: .5rem;
+  background-color: #252525;
+  border-radius: 50%;
+}
 .aboutme{
   display: flex;
   justify-content: center;
@@ -227,7 +237,8 @@ h1 span{
   bottom: -5%;
 }
 .aboutme p{
-  width: 50%;
+  width: 90%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,19 +391,21 @@ h1 span{
   position: relative;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: auto;
   min-width: 100%;
-  height: 80%;
+  height: auto;
   background-color:#fe004a;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 4rem;
 }
 .form{
-  width: 50%;
-  height: 90%; 
+  width: 80%;
+  height: 35rem; 
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4% 0;
 }
 form{
   width: 100%;
@@ -405,12 +418,15 @@ form{
   font-family: 'Krona One';
   font-weight: 600;
 }
+form h2{
+  text-align: center;
+}
 form label{
   display: flex;
   justify-content: flex-start;
   align-content: space-around;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: .5rem;
 }
@@ -450,8 +466,8 @@ form textarea{
 }
 form #button{
   width: auto;
-  height: 6%;
-  padding: 1% 2%;
+  height: 9%;
+  padding: 1% 4%;
   background-color: #141414;
   border: none;
   border-radius: .2rem;
@@ -461,23 +477,24 @@ form #button:hover{
   transform: scale(1.03);
 }
 form #button:active{
-
+  
 }
 .copy{
-  width: 50%;
-  height: 90%;
+  width: 100%;
+  height: 35rem;
   display: flex;
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 10%;
+  margin: 4% 0;
+  padding:5% ;
 }
 .copyarea{
   display: flex;
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   height: 30%;
 }
 .copy h2{
@@ -534,6 +551,13 @@ footer{
   height: 10%;
   background-color: #141414;
 }
+footer a{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
 .container{
   position:absolute;
 }
@@ -548,4 +572,23 @@ footer{
   text-align: center;
   text-transform: uppercase;
   padding-top:10px;
+}
+@media screen and (min-width:600px) {
+  .aboutme p{
+    width: 50%;
+  }
+}
+@media screen and (min-width:750px){
+  .copy{
+    width: 50%;
+  }
+  .copyarea{
+    width: 80%;
+  }
+  .form{
+    width: 50%;
+  }
+  .form label{
+    width: 80%;
+  }
 }
