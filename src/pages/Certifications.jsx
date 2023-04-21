@@ -4,6 +4,7 @@ function Certifications() {
     return(
         <>
             <Navigation/>
+            <p>xd</p>
         </>
     )
 }

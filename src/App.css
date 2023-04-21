@@ -177,7 +177,7 @@ nav{
 }
 main{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
   width: 100vw;
@@ -205,7 +205,21 @@ h1 span{
   align-items: center;
   font-family: 'Montserrat';
   font-weight: 200;
-
+  width: 90%;
+}
+.socials{
+  position: absolute;
+  top: 3%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+}
+main .social_icon{
+  font-size: 2.5rem;
+  margin: 1%;
 }
 .social_icon{
   display: flex;
@@ -213,9 +227,18 @@ h1 span{
   align-items: center;
   width: auto;
   height: auto;
-  padding: .5rem;
+  padding: .7rem;
   background-color: #252525;
   border-radius: 50%;
+  box-sizing: inherit;
+}
+.social_icon:hover{
+  transform: scale(1.1);
+  border: #fe004a solid 3px;
+  box-shadow: 0px 0px 10px 0px hsla(343, 100%, 50%, 0.300) ;
+}
+.social_icon:hover path{
+  color: #fe004a;
 }
 .aboutme{
   display: flex;
@@ -573,9 +596,40 @@ footer a{
   text-transform: uppercase;
   padding-top:10px;
 }
+@media screen and (min-width:380px) {
+  .socials{
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width:500px) {
+  .socials{
+    height: 60%;
+    width: 12%;
+    justify-content: center;
+    align-content: space-around;
+    right: 3%;
+    top: 20%;
+  }
+}
 @media screen and (min-width:600px) {
   .aboutme p{
     width: 50%;
+  }
+}
+@media screen and (min-width:704px) {
+  /* main{
+    justify-content: flex-start;
+  } */
+  .socials{
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    align-items: center;
+    top: 3%;
+    right: auto;
+  }
+  .welcome h2{
+    width: auto;
   }
 }
 @media screen and (min-width:750px){
@@ -590,5 +644,24 @@ footer a{
   }
   .form label{
     width: 80%;
+  }
+}
+@media screen and (min-width:925px) {
+  main{
+    justify-content: flex-start;
+  }
+  .socials{
+    height: 70%;
+    width: 8%;
+    justify-content: center;
+    align-content: space-around;
+    right: 3%;
+    top: 15%;
+  }
+
+}
+@media screen and (min-width:1200px) {
+  html{
+    font-size: 1.3vw;
   }
 }

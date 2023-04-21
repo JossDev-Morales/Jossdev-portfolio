@@ -15,15 +15,16 @@ function Root() {
             <Navigation />
             <Header />
             <main>
+                <div className="socials">
+                    <div className="social_icon"><Icon icon="ri:linkedin-fill" color="white" /></div>
+                    <div className="social_icon"><Icon icon="ph:github-logo-fill" color="white" /></div>
+                    <div className="social_icon"><Icon icon="mdi:twitter" color="white" /></div>
+                    <div className="social_icon"><Icon icon="ic:baseline-discord" color="white" /></div>
+                </div>
                 <div className="welcome">
-                    <div className="socials">
-                        <div className="icon"><Icon icon="ri:linkedin-fill" color="white" /></div>
-                        <div className="icon"><Icon icon="ph:github-logo-fill" color="white" /></div>
-                        <div className="icon"><Icon icon="mdi:twitter" color="white" /></div>
-                        <div className="icon"><Icon icon="ic:baseline-discord" color="white" /></div>
-                    </div>
+
                     <h1><span>Hi</span>,<br /> Im Josué Morales</h1>
-                    <h2>Front Web Developer Jr{ }</h2>
+                    <h2>Fullstack Web Developer</h2>
                 </div>
 
                 <div className={`custom-shape-divider-bottom divider-main`} >
@@ -111,7 +112,7 @@ function Root() {
                 </div>
             </div>
             <footer>
-                <a href='#'><p>Code by Joss<span>Dev</span></p><div className="social_icon"><Icon icon="ph:github-logo-fill" color="white" /></div></a>
+                <a href='https://github.com/JossDev-Morales/Jossdev-portfolio' target='_blank'><p>Coded by Joss<span>Dev</span></p><div className="social_icon"><Icon icon="ph:github-logo-fill" color="white" /></div></a>
             </footer>
 
         </>
