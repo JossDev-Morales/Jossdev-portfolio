@@ -10,9 +10,9 @@ function Projects() {
       
     return(
         <>
-            <NavigationCom/>
+            
             <div className="hero">
-
+            <NavigationCom/>
                 <h2>{data.projects?.pagetitle}</h2>
             </div>
             <div className='overview'>

@@ -5,6 +5,9 @@
   font-style: normal;
   font-weight: normal;
 }
+html{
+  font-size: 12px;
+}
 a{
   font-family: 'Montserrat subrayada';
   text-decoration: none;
@@ -104,12 +107,14 @@ header:before{
 }
 nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: absolute;
+  top: -25%;
   width: 100%;
-  height: 7%;
-  padding: 0 3%;
+  height: 25%;
+  padding: 0% 3%;
+  padding-top: 1%;
   padding-left: 5%;
   font-size: 1.3rem;
   font-weight: 500;
@@ -117,8 +122,27 @@ nav{
   font-family: 'Montserrat Subrayada';
   z-index: 10;
 }
-.nav__btns{
+
+.icon-nav{
   display: flex;
+  width: 2.8rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.icon-nav:active{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+nav .icon{
+  width: 2.8rem;
+  height: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.nav__btns{
+  display: none;
   justify-content: flex-end;
   align-items: center;
   width: 60%;
@@ -220,6 +244,7 @@ h1 span{
 main .social_icon{
   font-size: 2.5rem;
   margin: 1%;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.192);
 }
 .social_icon{
   display: flex;
@@ -232,12 +257,11 @@ main .social_icon{
   border-radius: 50%;
   box-sizing: inherit;
 }
-.social_icon:hover{
+main .social_icon:hover{
   transform: scale(1.1);
-  border: #fe004a solid 3px;
-  box-shadow: 0px 0px 10px 0px hsla(343, 100%, 50%, 0.300) ;
+
 }
-.social_icon:hover path{
+main .social_icon:hover path{
   color: #fe004a;
 }
 .aboutme{
@@ -596,6 +620,11 @@ footer a{
   text-transform: uppercase;
   padding-top:10px;
 }
+@media screen and (min-width:320px) {
+  html{
+    font-size: 16px;
+  }
+}
 @media screen and (min-width:380px) {
   .socials{
     justify-content: flex-start;
@@ -617,9 +646,18 @@ footer a{
   }
 }
 @media screen and (min-width:704px) {
-  /* main{
-    justify-content: flex-start;
-  } */
+  nav{
+    justify-content: space-between;
+  }
+  nav .icon{
+    display: flex;
+  }
+  .nav__btns{
+    display: flex;
+  }
+  .icon-nav{
+    display: none;
+  }
   .socials{
     justify-content: center;
     width: 40%;
@@ -664,4 +702,51 @@ footer a{
   html{
     font-size: 1.3vw;
   }
+}
+.menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  position: relative;
+}
+
+.menu-toggle span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 0;
+}
+
+.menu-toggle span:nth-child(2),
+.menu-toggle span:nth-child(3) {
+  top: 13px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 26px;
+}
+
+/* Cambios al hacer hover en el icono */
+.menu-toggle:hover span {
+  background-color: #555;
+}
+
+/* Animación para abrir y cerrar el menú */
+.menu-toggle.open span:nth-child(1) {
+  top: 13px;
+  width: 0%;
+}
+
+.menu-toggle.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
 }

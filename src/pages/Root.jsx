@@ -12,7 +12,6 @@ function Root() {
     const data = useSelector(state => state.Content)
     return (
         <>
-            <Navigation />
             <Header />
             <main>
                 <div className="socials">

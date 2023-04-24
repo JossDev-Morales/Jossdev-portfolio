@@ -3,8 +3,8 @@ import Header from '../components/Header'
 function Certifications() {
     return(
         <>
-            <Navigation/>
-            <p>xd</p>
+            <Header/>
+
         </>
     )
 }
