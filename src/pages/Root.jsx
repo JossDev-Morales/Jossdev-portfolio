@@ -15,10 +15,10 @@ function Root() {
             <Header />
             <main>
                 <div className="socials">
-                    <div className="social_icon"><Icon icon="ri:linkedin-fill" color="white" /></div>
-                    <div className="social_icon"><Icon icon="ph:github-logo-fill" color="white" /></div>
-                    <div className="social_icon"><Icon icon="mdi:twitter" color="white" /></div>
-                    <div className="social_icon"><Icon icon="ic:baseline-discord" color="white" /></div>
+                    <div className="social_icon"><a href="https://www.linkedin.com/in/jossdev-js/" target='_blank'><Icon icon="ri:linkedin-fill" color="white" /></a></div>
+                    <div className="social_icon"><a href="https://github.com/JossDev-Morales" target="_blank" rel="noopener noreferrer"><Icon icon="ph:github-logo-fill" color="white" /></a></div>
+                    <div className="social_icon"><a href="https://twitter.com/JossDev_" target="_blank" rel="noopener noreferrer"><Icon icon="mdi:twitter" color="white" /></a></div>
+                    <div className="social_icon"><a href="http://" target="_blank" rel="noopener noreferrer"><Icon icon="ic:baseline-discord" color="white" /></a></div>
                 </div>
                 <div className="welcome">
 

@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Subrayada&family=Montserrat:wght@200&display=swap');
+
 @font-face {
   font-family: 'belladona';
   src: url('/src/assets/Odachi/Webfont/Odachi.woff') format('woff');
   font-style: normal;
   font-weight: normal;
 }
-html{
+
+html {
   font-size: 12px;
 }
-a{
+
+a {
   font-family: 'Montserrat subrayada';
   text-decoration: none;
 }
-.textkrona{
+
+.textkrona {
   font-family: 'Krona One';
 }
-h2{
+
+h2 {
   font-family: 'Krona One';
 }
-.glass{
-  background-color:rgba(255, 255, 255, 0.048);
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.048);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transform-style: preserve-3d;
@@ -28,18 +34,20 @@ h2{
   transition: 1s;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.13);
 }
-.btn{
+
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
   height: 3rem;
   border-radius: 1rem;
-  background-color:rgba(255, 255, 255, 0.048);
+  background-color: rgba(255, 255, 255, 0.048);
   cursor: pointer;
   padding: 2%;
 }
-.btn:hover{
+
+.btn:hover {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transform-style: preserve-3d;
@@ -48,7 +56,8 @@ h2{
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.233);
   transform: scale(1.08);
 }
-header{
+
+header {
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -56,16 +65,18 @@ header{
   width: 100%;
   height: 30%;
   background-image: url('/src/assets/1.jpg');
-  background-size:cover;
+  background-size: cover;
 }
-header:before{
-  background: linear-gradient(to right, rgba(185, 0, 241, 0.233),#fe00483d);
+
+header:before {
+  background: linear-gradient(to right, rgba(185, 0, 241, 0.233), #fe00483d);
   content: '';
   height: 100%;
   position: absolute;
   width: 100%;
 }
-.resumes{
+
+.resumes {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -76,12 +87,14 @@ header:before{
   bottom: 8%;
   left: 2%;
 }
-.resume{
-  background-color:#fe004a;
+
+.resume {
+  background-color: #fe004a;
   text-align: center;
   cursor: pointer;
 }
-.btns-header{
+
+.btns-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -92,23 +105,26 @@ header:before{
   bottom: 8%;
   right: 2%;
 }
-.header-switch{
+
+.header-switch {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: .5rem;
-  background-color:#141414;
+  background-color: #141414;
   cursor: pointer;
 }
-.header-switch:hover{
+
+.header-switch:hover {
   transform: scale(1.08);
 }
-nav{
+
+nav {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   position: absolute;
   top: -25%;
   width: 100%;
@@ -123,35 +139,75 @@ nav{
   z-index: 10;
 }
 
-.icon-nav{
+.nav-mobile-open {
+  position: absolute;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-color: #252525;
+}
+
+.menu-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.menu-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  background-color: #333333;
+}
+.menu-option:active{
+  color:#fe004a;
+  transform: scale(1.05);
+}
+
+.icon-nav {
   display: flex;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  background-color: #141414b7;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
-.icon-nav:active{
+
+.icon-nav:active {
   transform: scale(1.05);
   cursor: pointer;
+
 }
-nav .icon{
+
+.icon-nav:active .path2 {
+  fill: #141414;
+}
+
+nav .icon {
   width: 2.8rem;
   height: auto;
   display: none;
   justify-content: center;
   align-items: center;
 }
-.nav__btns{
+
+.nav__btns {
   display: none;
   justify-content: flex-end;
   align-items: center;
   width: 60%;
   height: 100%;
 }
-.nav__btn-e{
+
+.nav__btn-e {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,8 +218,9 @@ nav .icon{
   margin: 0 2%;
   background-color: rgba(255, 255, 255, 0);
 }
-.nav__btn-e:hover{
-  background-color:rgba(255, 255, 255, 0.048);
+
+.nav__btn-e:hover {
+  background-color: rgba(255, 255, 255, 0.048);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(5px);
   transform-style: preserve-3d;
@@ -172,8 +229,9 @@ nav .icon{
   transition: .1s;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.13);
 }
-#root{
-  
+
+#root {
+
   background: rgb(20, 20, 20);
   margin: 0;
   width: 100%;
@@ -181,6 +239,7 @@ nav .icon{
   font-family: 'Raleway', sans-serif;
   z-index: 10;
 }
+
 .custom-shape-divider-bottom {
   position: absolute;
   bottom: 0;
@@ -190,19 +249,23 @@ nav .icon{
   line-height: 0;
   transform: rotate(180deg);
 }
-.divider-main{
+
+.divider-main {
   background-color: #141414;
 }
+
 .custom-shape-divider-bottom svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 50px;
 }
-.custom-shape-divider-bottom .shape-fill{
-  fill:#fe004a;
+
+.custom-shape-divider-bottom .shape-fill {
+  fill: #fe004a;
 }
-main{
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,31 +273,36 @@ main{
   width: 100vw;
   height: 68%;
 
-  
+
 }
-.welcome{
+
+.welcome {
   display: flex;
   justify-content: center;
   align-content: space-around;
   flex-wrap: wrap;
 }
-h1{
+
+h1 {
   font-family: 'Krona One';
   font-size: 3.5rem;
-  padding: 5% ;
+  padding: 5%;
 }
-h1 span{
+
+h1 span {
   color: #fe004a;
 }
-.welcome h2{
+
+.welcome h2 {
   display: inline-flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: center;
   font-family: 'Montserrat';
   font-weight: 200;
   width: 90%;
 }
-.socials{
+
+.socials {
   position: absolute;
   top: 3%;
   display: flex;
@@ -244,12 +312,20 @@ h1 span{
   width: 90%;
   height: auto;
 }
-main .social_icon{
+.socials a{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .social_icon {
   font-size: 2.5rem;
   margin: 1%;
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.192);
 }
-.social_icon{
+
+.social_icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,14 +336,17 @@ main .social_icon{
   border-radius: 50%;
   box-sizing: inherit;
 }
-main .social_icon:hover{
+
+main .social_icon:hover {
   transform: scale(1.1);
 
 }
-main .social_icon:hover path{
+
+main .social_icon:hover path {
   color: #fe004a;
 }
-.aboutme{
+
+.aboutme {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -276,17 +355,21 @@ main .social_icon:hover path{
   height: 50%;
   background-color: #fe004a;
 }
-.divider-aboutme{
+
+.divider-aboutme {
   background-color: #fe004a;
 }
-.divider-aboutme .shape-fill{
+
+.divider-aboutme .shape-fill {
   fill: #141414;
 }
-.aboutme-title{
+
+.aboutme-title {
   position: absolute;
   bottom: -5%;
 }
-.aboutme p{
+
+.aboutme p {
   width: 90%;
   height: 80%;
   display: flex;
@@ -297,7 +380,8 @@ main .social_icon:hover path{
   font-size: 1.2rem;
   font-weight: 600;
 }
-.aboutme #projects-aboutme{
+
+.aboutme #projects-aboutme {
   color: #141414;
   position: absolute;
   right: 5%;
@@ -305,16 +389,19 @@ main .social_icon:hover path{
   font-family: 'Montserrat Subrayada';
   text-decoration: none;
 }
-.aboutme #projects-aboutme:hover{
+
+.aboutme #projects-aboutme:hover {
   color: white;
 }
-.aboutme-connect{
+
+.aboutme-connect {
   position: absolute;
   display: inline-flex;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.233);
   bottom: 15%;
 }
-.slider{
+
+.slider {
   display: flex;
   justify-content: center;
   align-content: flex-start;
@@ -322,17 +409,20 @@ main .social_icon:hover path{
   width: 100%;
   height: 70%;
 }
-.slider h2{
+
+.slider h2 {
   margin: 5% 0;
 }
-.slider-cont{
+
+.slider-cont {
   display: flex;
   position: relative;
   width: 80%;
   height: 70%;
   overflow: hidden;
 }
-.grab-band{
+
+.grab-band {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -341,8 +431,12 @@ main .social_icon:hover path{
   width: 280%;
   cursor: grab;
 }
-.grab-band:active{cursor: grabbing;}
-.item-slider{
+
+.grab-band:active {
+  cursor: grabbing;
+}
+
+.item-slider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,12 +444,13 @@ main .social_icon:hover path{
   overflow: hidden;
   width: 40rem;
   margin: 0% 1%;
-  object-fit:cover;
+  object-fit: cover;
   -webkit-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
 }
-.skills{
+
+.skills {
   display: flex;
   position: relative;
   justify-content: center;
@@ -364,23 +459,28 @@ main .social_icon:hover path{
   width: 100%;
   height: auto;
 }
-.skills h2{
+
+.skills h2 {
   width: 50%;
   text-align: center;
   margin: 3% 0;
 }
-.skills > a{
+
+.skills>a {
   width: 60%;
   margin: 10%;
   text-align: center;
 }
-.divider-skills{
-  background-color:#14141400 ;
+
+.divider-skills {
+  background-color: #14141400;
 }
-.divider-skills .shape-fill{
+
+.divider-skills .shape-fill {
   fill: #fe004a;
 }
-.stacklist{
+
+.stacklist {
   display: flex;
   justify-content: space-around;
   align-content: flex-start;
@@ -389,7 +489,8 @@ main .social_icon:hover path{
   height: auto;
   margin-bottom: 10%;
 }
-.tech{
+
+.tech {
   display: flex;
   justify-content: center;
   align-content: space-around;
@@ -401,42 +502,49 @@ main .social_icon:hover path{
   background-color: #141414;
   transition: all .1s linear;
 }
-.tech a{
+
+.tech a {
   display: none;
   width: 80%;
   text-align: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 2s ease-out ;
+  transition: opacity 2s ease-out;
   transition-delay: .2s;
   color: #fe004a;
 }
-.tech h2{
+
+.tech h2 {
   display: none;
   width: 80%;
   text-align: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 2s ease-out ;
+  transition: opacity 2s ease-out;
   transition-delay: .2s;
   color: #fe004a;
 }
-.tech:hover svg{
+
+.tech:hover svg {
   display: none;
 
 }
-.tech:hover h2{
+
+.tech:hover h2 {
   display: flex;
   opacity: 1;
 }
-.tech:hover a{
+
+.tech:hover a {
   display: flex;
   opacity: 1;
 }
-.tech:hover{
+
+.tech:hover {
   border: 3px solid #fe004a;
 }
-.contact{
+
+.contact {
   display: flex;
   position: relative;
   justify-content: center;
@@ -445,19 +553,21 @@ main .social_icon:hover path{
   width: auto;
   min-width: 100%;
   height: auto;
-  background-color:#fe004a;
+  background-color: #fe004a;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 4rem;
 }
-.form{
+
+.form {
   width: 80%;
-  height: 35rem; 
+  height: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 4% 0;
 }
-form{
+
+form {
   width: 100%;
   height: 100%;
   display: inline-flex;
@@ -468,10 +578,12 @@ form{
   font-family: 'Krona One';
   font-weight: 600;
 }
-form h2{
+
+form h2 {
   text-align: center;
 }
-form label{
+
+form label {
   display: flex;
   justify-content: flex-start;
   align-content: space-around;
@@ -480,7 +592,8 @@ form label{
   height: auto;
   padding: .5rem;
 }
-.inputform{
+
+.inputform {
   width: 100%;
   height: 3rem;
   border: none;
@@ -493,15 +606,17 @@ form label{
   font-family: 'Montserrat';
   transition: all .2s ease-in;
 }
-.inputform:hover{
+
+.inputform:hover {
   transform: scale(1.02);
 }
-form label span{
+
+form label span {
   width: 30%;
   text-align: start;
 }
 
-form textarea{
+form textarea {
   min-width: 100%;
   min-height: 8rem;
   max-height: 15rem;
@@ -514,7 +629,8 @@ form textarea{
   font-weight: 600;
   font-family: 'Montserrat';
 }
-form #button{
+
+form #button {
   width: auto;
   height: 9%;
   padding: 1% 4%;
@@ -523,13 +639,14 @@ form #button{
   border-radius: .2rem;
   margin: 0 20%;
 }
-form #button:hover{
+
+form #button:hover {
   transform: scale(1.03);
 }
-form #button:active{
-  
-}
-.copy{
+
+form #button:active {}
+
+.copy {
   width: 100%;
   height: 35rem;
   display: flex;
@@ -537,9 +654,10 @@ form #button:active{
   align-content: space-between;
   flex-wrap: wrap;
   margin: 4% 0;
-  padding:5% ;
+  padding: 5%;
 }
-.copyarea{
+
+.copyarea {
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -547,11 +665,13 @@ form #button:active{
   width: 100%;
   height: 30%;
 }
-.copy h2{
+
+.copy h2 {
   width: 100%;
   text-align: center;
 }
-.copycont{
+
+.copycont {
   position: relative;
   width: 30%;
   height: 50%;
@@ -561,10 +681,12 @@ form #button:active{
   align-items: center;
   background-color: #141414;
 }
-.copycont:hover{
+
+.copycont:hover {
   transform: scale(1.04);
 }
-.copybtn{
+
+.copybtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -577,7 +699,8 @@ form #button:active{
   left: 0;
   position: absolute;
 }
-.copycheck{
+
+.copycheck {
   width: 35%;
   height: 100%;
   display: flex;
@@ -588,12 +711,14 @@ form #button:active{
   right: 0%;
   border: #141414 2px solid;
   transition: all.3s ease-out;
-  border-radius: 0 1rem  1rem 0;
+  border-radius: 0 1rem 1rem 0;
 }
-.copycheck svg path{
+
+.copycheck svg path {
   fill: #141414;
 }
-footer{
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -601,40 +726,47 @@ footer{
   height: 10%;
   background-color: #141414;
 }
-footer a{
+
+footer a {
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: .5rem;
 }
-.container{
-  position:absolute;
+
+.container {
+  position: absolute;
 }
-.title{
- 
+
+.title {
+
   background-position: 40% 50%;
 
 
 }
-.subtitle{
+
+.subtitle {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  padding-top:10px;
+  padding-top: 10px;
 }
+
 @media screen and (min-width:320px) {
-  html{
+  html {
     font-size: 16px;
   }
 }
+
 @media screen and (min-width:380px) {
-  .socials{
+  .socials {
     justify-content: flex-start;
   }
 }
+
 @media screen and (min-width:500px) {
-  .socials{
+  .socials {
     height: 60%;
     width: 12%;
     justify-content: center;
@@ -643,25 +775,32 @@ footer a{
     top: 20%;
   }
 }
+
 @media screen and (min-width:600px) {
-  .aboutme p{
+  .aboutme p {
     width: 50%;
   }
 }
+
 @media screen and (min-width:704px) {
-  nav{
+  nav {
     justify-content: space-between;
+    background-color: #14141465;
   }
-  nav .icon{
+
+  nav .icon {
     display: flex;
   }
-  .nav__btns{
+
+  .nav__btns {
     display: flex;
   }
-  .icon-nav{
+
+  .icon-nav {
     display: none;
   }
-  .socials{
+
+  .socials {
     justify-content: center;
     width: 40%;
     height: auto;
@@ -669,29 +808,36 @@ footer a{
     top: 3%;
     right: auto;
   }
-  .welcome h2{
+
+  .welcome h2 {
     width: auto;
   }
 }
-@media screen and (min-width:750px){
-  .copy{
+
+@media screen and (min-width:750px) {
+  .copy {
     width: 50%;
   }
-  .copyarea{
+
+  .copyarea {
     width: 80%;
   }
-  .form{
+
+  .form {
     width: 50%;
   }
-  .form label{
+
+  .form label {
     width: 80%;
   }
 }
+
 @media screen and (min-width:925px) {
-  main{
+  main {
     justify-content: flex-start;
   }
-  .socials{
+
+  .socials {
     height: 70%;
     width: 8%;
     justify-content: center;
@@ -701,8 +847,9 @@ footer a{
   }
 
 }
+
 @media screen and (min-width:1200px) {
-  html{
+  html {
     font-size: 1.3vw;
   }
 }
