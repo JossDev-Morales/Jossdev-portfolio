@@ -16,7 +16,7 @@ function Navigation() {
     const [isOpen,setIsOpen]=useState(false)
     const nav=useRef()
     return(
-        <motion.nav whileInView={{top:0+'%'}} ref={nav} className={isOpen?'nav-mobile-open':''}>
+        <motion.nav whileInView={{top:0+'%'}} ref={nav} className={isOpen&&'nav-mobile-open'}>
             <div className="icon-nav" onClick={()=>{
                 setTimeout(()=>{iconAnimation?setIconAnimation(false):setIconAnimation(true)},200)
                 isOpen?setIsOpen(false):setIsOpen(true)
@@ -30,20 +30,29 @@ function Navigation() {
                 <div className="nav__btn-e btn" onClick={()=>navigate("/certifications")}>{data.nav?.btn3}</div>
             </div>
             {isOpen&&(
-            <div className='menu-options'>
+            <>  
+            <div className="icon-mobile"><img src={jossdev} alt="Joss Dev icon" /></div>
+            <div className='menu-options' >
                 <div className="menu-option" onClick={()=>{
                     setTimeout(()=>navigate("/"),200)
-                    document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
+                    if (window.location.hash.split('/').pop()!=='') {
+                        document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
+                    }
                 }}>{data.nav?.btn1} <FontAwesomeIcon icon={faHouse} /></div>
                 <div className="menu-option" onClick={()=>{
                     setTimeout(()=>navigate("/projects"),200)
-                    document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
+                    if (window.location.hash.split('/').pop()!=='projects') {
+                        document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
+                    }
                     }}>{data.nav?.btn2} <FontAwesomeIcon icon={faFolder} /></div>
                 <div className="menu-option" onClick={()=>{
                     setTimeout(()=>navigate("/certifications"),200)
-                    document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
+                    if (window.location.hash.split('/').pop()!=='certifications') {
+                        document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
+                    }
                     }}>{data.nav?.btn3} <FontAwesomeIcon icon={faAward} /></div>
             </div>
+            </>
             )}
         </motion.nav>
     )

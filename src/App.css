@@ -145,7 +145,16 @@ nav {
   height: 100vh;
   background-color: #252525;
 }
-
+.icon-mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.icon-mobile img{
+  width: 15%;
+}
 .menu-options {
   display: flex;
   flex-wrap: wrap;
@@ -169,6 +178,9 @@ nav {
 .menu-option:active{
   color:#fe004a;
   transform: scale(1.05);
+}
+.menu-option:active path{
+  fill: #fe004a;
 }
 
 .icon-nav {
