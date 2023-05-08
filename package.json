@@ -21,7 +21,8 @@
     "react-hook-form": "^7.43.0",
     "react-loader-spinner": "^5.3.4",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.7.0"
+    "react-router-dom": "^6.7.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@iconify/react": "^4.0.1",

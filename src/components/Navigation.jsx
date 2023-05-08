@@ -16,7 +16,7 @@ function Navigation() {
     const [isOpen,setIsOpen]=useState(false)
     const nav=useRef()
     return(
-        <motion.nav whileInView={{top:0+'%'}} ref={nav} className={isOpen&&'nav-mobile-open'}>
+        <motion.nav whileInView={{top:0+'%'}} ref={nav} className={isOpen?'nav-mobile-open':undefined}>
             <div className="icon-nav" onClick={()=>{
                 setTimeout(()=>{iconAnimation?setIconAnimation(false):setIconAnimation(true)},200)
                 isOpen?setIsOpen(false):setIsOpen(true)
@@ -25,9 +25,9 @@ function Navigation() {
                 <FontAwesomeIcon  icon={isOpen?faXmark:faBars} beatFade={iconAnimation} style={{color: "#f6f7f9",}} /></div>
             <div className="icon"><img src={jossdev} alt="Joss Dev icon" /></div>
             <div className="nav__btns">
-                <div className="nav__btn-e btn" onClick={()=>{setTimeout(()=>navigate("/"),200)}}>{data.nav?.btn1}</div>
-                <div className="nav__btn-e btn" onClick={()=>navigate("/projects")}>{data.nav?.btn2}</div>
-                <div className="nav__btn-e btn" onClick={()=>navigate("/certifications")}>{data.nav?.btn3}</div>
+                <div className="nav__btn-e btn" onClick={()=>{setTimeout(()=>navigate("/"),200)}}>{data.menu?.btn1}</div>
+                <div className="nav__btn-e btn" onClick={()=>navigate("/projects")}>{data.menu?.btn2}</div>
+                <div className="nav__btn-e btn" onClick={()=>navigate("/certifications")}>{data.menu?.btn3}</div>
             </div>
             {isOpen&&(
             <>  
@@ -38,19 +38,19 @@ function Navigation() {
                     if (window.location.hash.split('/').pop()!=='') {
                         document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
                     }
-                }}>{data.nav?.btn1} <FontAwesomeIcon icon={faHouse} /></div>
+                }}>{data.menu?.btn1} <FontAwesomeIcon icon={faHouse} /></div>
                 <div className="menu-option" onClick={()=>{
                     setTimeout(()=>navigate("/projects"),200)
                     if (window.location.hash.split('/').pop()!=='projects') {
                         document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
                     }
-                    }}>{data.nav?.btn2} <FontAwesomeIcon icon={faFolder} /></div>
+                    }}>{data.menu?.btn2} <FontAwesomeIcon icon={faFolder} /></div>
                 <div className="menu-option" onClick={()=>{
                     setTimeout(()=>navigate("/certifications"),200)
                     if (window.location.hash.split('/').pop()!=='certifications') {
                         document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
                     }
-                    }}>{data.nav?.btn3} <FontAwesomeIcon icon={faAward} /></div>
+                    }}>{data.menu?.btn3} <FontAwesomeIcon icon={faAward} /></div>
             </div>
             </>
             )}

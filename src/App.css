@@ -643,13 +643,20 @@ form textarea {
 }
 
 form #button {
-  width: auto;
+  width: 7rem;
   height: 9%;
-  padding: 1% 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
   background-color: #141414;
   border: none;
   border-radius: .2rem;
   margin: 0 20%;
+  cursor: pointer;
+}
+form #button path{
+  fill: #fe004a;
 }
 
 form #button:hover {
@@ -658,6 +665,19 @@ form #button:hover {
 
 form #button:active {}
 
+.form-error{
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  align-items: center;
+  width: auto;
+  padding: .2rem 1rem;
+  border-radius: .2rem;
+  background-color: #141414;
+}
+.form-error path{
+  fill:#fe004a;
+}
 .copy {
   width: 100%;
   height: 35rem;

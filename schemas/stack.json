@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1c287dca-d75d-4883-9fc4-5a264da3036d",
+    "color": "#20232a",
+    "route": "logos:javascript",
+    "title": "Java Script",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "ca587df9-a6a3-424c-a682-4dfbd0314316",
+    "color": "#20232a",
+    "route": "vscode-icons:file-type-reactjs",
+    "title": "React",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "b6b4f0ea-a44c-4c9a-9c7f-146e56e1fd7c",
+    "color": "#20232a",
+    "route": "logos:redux",
+    "title": "Redux",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "29665837-6989-4708-849f-4ba6fe112afb",
+    "color": "#5a29e4",
+    "route": "simple-icons:axios",
+    "title": "Axios",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "2ce96723-f608-436a-8a50-87730ae0b602",
+    "color": "#20232a",
+    "route": "logos:react-router",
+    "title": "React router",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "5fd22eb9-cf66-419c-aced-9803f15520ba",
+    "color": "#20232a",
+    "route": "vscode-icons:file-type-css",
+    "title": "Css",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "fff21d03-4cda-4db9-8f39-060cf75997ff",
+    "color": "#20232a",
+    "route": "logos:tailwindcss-icon",
+    "title": "Tailwind",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "a953d11f-d8d4-493a-9892-dbee6842c768",
+    "color": "#20232a",
+    "route": "logos:bootstrap",
+    "title": "Botstrap",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": "05d65684-e6a5-4080-9b52-88881c2b3c4e",
+    "color": "#20232a",
+    "route": "vscode-icons:file-type-html",
+    "title": "Html",
+    "link": "https://reactjs.org/"
+  }
+]

@@ -15,30 +15,19 @@ import {
 } from 'react-router-dom'
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux'
-import { changeRes } from './store/slice/response.slice';
 import { changeCont } from './store/slice/Content.slice';
+import ui from '../schemas/ui.json'
 
-export const url_base = `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_ID}/`
 function App() {
   
   const data=useSelector(state=>state.Response)
   
   const dispatch = useDispatch()
-  const config = {
-    headers: {
-      'X-Acces-Key': import.meta.env.VITE_ACCESKEY
-    }
-  };
+  
 
+  
   useEffect(()=>{
-    axios.get(url_base, config)
-    .then(res =>{
-      dispatch(changeRes(res.data.record))
-    })
-    .catch(err => console.log(err))
-  },[])
-  useEffect(()=>{
-    dispatch(changeCont(data.en))
+    dispatch(changeCont(ui.en))
   },[data])
  
   return (

@@ -37,8 +37,8 @@ function Header() {
       <header className='title'>
       <Navigation />
         <div className="resumes">
-          <div className="btn resume">{data.resumes?.es.title} Es</div>
-          <div className="btn resume">{data.resumes?.en.title} En</div>
+          <div className="btn resume">{data.home?.resumes?.es.title} Es</div>
+          <div className="btn resume">{data.home?.resumes?.en.title} En</div>
         </div>
         <div className="btns-header">
           <div onClick={() => { switchImage() }} className="header-switch "><FontAwesomeIcon icon={faImages} /></div>

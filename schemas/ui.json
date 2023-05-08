@@ -1,0 +1,122 @@
+{
+  "en": {
+    "menu": {
+      "btn1": "Home",
+      "btn2": "Projects",
+      "btn3": "Certifications"
+    },
+    "home": {
+      "resumes": {
+        "en": {
+          "title": "Resume"
+        },
+        "es": {
+          "title": "Resume"
+        }
+      },
+      "about": {
+        "text": "I'm a inveterate developer, I'm 20 years old, I love programming, imagining and building things, I'm looking for the opportunity to develop amazing things, maybe we can do it together...",
+        "button": "Let's connect",
+        "link": "My projects",
+        "title": "About me"
+      },
+      "built": {
+        "title": "Hey, look what i built"
+      },
+      "stack": {
+        "title": "Stack",
+        "link": "Go to certifications"
+      },
+      "contact": {
+        "phone": "695-1172893",
+        "mail": "thejosuescript@gmail.com",
+        "discord": "http://discordapp.com/users/564970023479934977",
+        "linkedin": "https://www.linkedin.com/in/jossdev-js/",
+        "twitter": "https://twitter.com/JossDev_",
+        "github": "https://github.com/JossDev-Morales"
+      },
+      "form": {
+        "title": "Send me a message",
+        "button": "Get in touch",
+        "inputs": {
+          "name": "Name",
+          "mail": "Mail",
+          "message": "Message",
+          "holder": "Type your message here, I will receive it and I will contact you"
+        },
+        "gets": {
+          "mail": "Send me a mail",
+          "number": "Get my number"
+        }
+      }
+    },
+    "projects": {
+      "pagetitle": "My Projects",
+      "overview": "Welcome too my projects section, here you can find some of my work, im currently working to grow up my portfolio.",
+      "span": "Have fun",
+      "tagbtns": ["all", "Js React", "Js Vanilla"]
+    },
+    "certifications": {}
+  },
+  "es": {
+    "menu": {
+      "nav": {
+        "btn1": "Inicio",
+        "btn2": "Projectos",
+        "btn3": "Certificaciones"
+      }
+    },
+    "home": {
+      "about": {
+        "text": "Soy un desarrollador empedernido, tengo 20 años, me encanta programar, imaginar y construir cosas, busco la oportunidad de desarrollar cosas increíbles, tal vez podamos hacerlo juntos...",
+        "button": "Conectemonos",
+        "link": "Mis proyectos",
+        "title": "Acerca de mi"
+      },
+      "resumes": {
+        "en": {
+          "title": "CVitae"
+        },
+        "es": {
+          "title": "Cvitae"
+        }
+      },
+      "built": {
+        "title": "Hey, mira lo que construi"
+      },
+      "stack": {
+        "title": "Tecnologias",
+        "link": "Ir a las certificaciones"
+      },
+      "contact": {
+        "phone": "695-1172893",
+        "mail": "thejosuescript@gmail.com",
+        "discord": "http://discordapp.com/users/564970023479934977",
+        "linkedin": "https://www.linkedin.com/in/jossdev-js/",
+        "twitter": "https://twitter.com/JossDev_",
+        "github": "https://github.com/JossDev-Morales"
+      },
+      "form": {
+        "title": "Enviame un mensaje",
+        "button": "Contactame",
+        "inputs": {
+          "name": "Nombre",
+          "mail": "Correo",
+          "message": "Mensaje",
+          "holder": "Escribe tu mensaje aqui, lo recibire y te contactare"
+        },
+        "gets": {
+          "mail": "Enviame un mail",
+          "number": "Obten mi numero"
+        }
+      }
+    },
+    "projects": {
+      "pagetitle": "Mis Proyectos",
+      "overview": "Bienvenido a mi sección de proyectos, aquí podrás encontrar algunos de mis trabajos, actualmente estoy trabajando para hacer crecer mi portafolio.",
+      "span": "Diviertete",
+      "tagbtns": ["Todos", "Js React", "Js Vanilla"]
+    },
+    "certifications": {}
+  }
+}
