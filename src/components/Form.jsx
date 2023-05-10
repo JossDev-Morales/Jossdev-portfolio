@@ -45,7 +45,6 @@ function Form({ data }) {
             return chat;
           }
         });
-        console.log({ where: "if-true", data });
       } else {
         chats.data.record.push({
           id: v4(),
