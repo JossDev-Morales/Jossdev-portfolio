@@ -52,19 +52,18 @@
     },
     "projects": {
       "pagetitle": "My Projects",
-      "overview": "Welcome too my projects section, here you can find some of my work, im currently working to grow up my portfolio.",
+      "overview": "Welcome to my projects section, here you can find some of my work, im currently working to grow up my portfolio.",
       "span": "Have fun",
-      "tagbtns": ["all", "Js React", "Js Vanilla"]
+      "tagbtns": ["all", "Js React", "Js Vanilla"],
+      "deploy":{"en":"Deployment","es":"Despliegue"}
     },
     "certifications": {}
   },
   "es": {
     "menu": {
-      "nav": {
-        "btn1": "Inicio",
-        "btn2": "Projectos",
-        "btn3": "Certificaciones"
-      }
+      "btn1": "Inicio",
+      "btn2": "Projectos",
+      "btn3": "Certificaciones"
     },
     "home": {
       "about": {
@@ -115,7 +114,8 @@
       "pagetitle": "Mis Proyectos",
       "overview": "Bienvenido a mi sección de proyectos, aquí podrás encontrar algunos de mis trabajos, actualmente estoy trabajando para hacer crecer mi portafolio.",
       "span": "Diviertete",
-      "tagbtns": ["Todos", "Js React", "Js Vanilla"]
+      "tagbtns": ["Todos", "Js React", "Js Vanilla"],
+      "deploy":{"en":"Deployment","es":"Despliegue"}
     },
     "certifications": {}
   }

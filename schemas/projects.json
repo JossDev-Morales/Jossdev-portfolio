@@ -1,13 +1,45 @@
 [
-    {
-        "id":"c5fb0824-9dab-438d-9f72-ebf788b5765c",
-        "title":"",
-        "description-es":"",
-        "description-en":"",
-        "image":"",
-        "type":"",
-        "github":"",
-        "link":"",
-        "stack":[]
-    }
+  {
+    "id": "c5fb0824-9dab-438d-9f72-ebf788b5765c",
+    "title": "My commerce",
+    "description-es": "Un e-commerce de productos electronicos donde puedes comprar tus productos favoritos",
+    "description-en": "An e-commerce of electronic products where you can buy your favorite products.",
+    "large-description-es": "Una moderna y bonita aplicación de comercio electrónico (e-commerce) que te permite buscar y filtrar entre diferentes productos, agregar tus favoritos al carrito y comprarlos, puedes registrarte y guardar tu configuración y un avatar de usuario.",
+    "large-description-en": "A modern and pretty e-commerce (e-commerce) application that allows you to search and filter between different products, add your favorites to cart and buy them, you can register and save your settings and a user avatar.",
+    "image": "https://i.ibb.co/NSHsQpz/mycommerce-mockup.webp",
+    "images": [
+      "https://i.ibb.co/k921974/image.png",
+      "https://i.ibb.co/WkTPCJD/image-3.png",
+      "https://i.ibb.co/TYTXwyd/image-5.png",
+      "https://i.ibb.co/NpHtKX0/image-4.png",
+      "https://i.ibb.co/7pwPgYj/image-1.png",
+      "https://i.ibb.co/128nftn/image-2.png",
+      "https://i.ibb.co/NSHsQpz/mycommerce-mockup.webp"
+    ],
+    "type": "MPA",
+    "github": "https://github.com/JossDev-Morales/Ecommerce--final",
+    "link": "https://my-commerce-tech.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-reactjs",
+        "title": "React"
+      },
+      {
+        "route": "logos:redux",
+        "title": "Redux"
+      },
+      {
+        "route": "simple-icons:axios",
+        "title": "Axios"
+      },
+      {
+        "route": "logos:react-router",
+        "title": "React router"
+      }
+    ]
+  }
 ]

@@ -17,10 +17,10 @@ import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux'
 import { changeCont } from './store/slice/Content.slice';
 import ui from '../schemas/ui.json'
+import { changeRes } from './store/slice/response.slice';
 
 function App() {
   
-  const data=useSelector(state=>state.Response)
   
   const dispatch = useDispatch()
   
@@ -28,13 +28,14 @@ function App() {
   
   useEffect(()=>{
     dispatch(changeCont(ui.en))
-  },[data])
+    dispatch(changeRes('en'))
+  },[])
  
   return (
     <>
       <HashRouter>
         <Routes>
-          <Route path="/" element={<Root data={data} />} />
+          <Route path="/" element={<Root  />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certifications" element={<Certifications />} />
         </Routes>

@@ -6,11 +6,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { changeCont } from '../store/slice/Content.slice'
 import { useState } from 'react'
 import Navigation from './Navigation'
+import ui from './../../schemas/ui.json'
+import { changeRes } from '../store/slice/response.slice'
 function Header() {
   const data = useSelector(state => state.Content)
-  const res = useSelector(state => state.Response)
   const dispatch = useDispatch()
-  const [currentData, setCurrentData] = useState("en")
+  const currentData = useSelector(state=>state.Response)
   var mouseX, mouseY;
   var ww = window.innerWidth
   var wh = window.innerHeight
@@ -25,11 +26,11 @@ function Header() {
   });
   function switchLang() {
     if (currentData == "en") {
-      dispatch(changeCont(res.es))
-      setCurrentData("es")
+      dispatch(changeCont(ui.es))
+      dispatch(changeRes('es'))
     } else if (currentData == "es") {
-      dispatch(changeCont(res.en))
-      setCurrentData("en")
+      dispatch(changeCont(ui.en))
+      dispatch(changeRes("en"))
     }
   }
   return (
