@@ -10,17 +10,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Form from "../components/Form";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Loader from "../components/loader";
 function Root() {
   const data = useSelector((state) => state.Content);
   const [stack, setStack] = useState([]);
+  const [isLoading,setIsLoading]=useState(true)
   useEffect(() => {
     axios
       .get(`https://api.jsonbin.io/v3/b/${import.meta.env.VITE_STACK_BIN}`,{headers:{'X-Access-Key':'$2b$10$e98drt8xbxpgLUdPBnsHuu.3YT1PCK1NnMizHwUXdIokGYD/6g5NS'}})
       .then((res) => {
         setStack(res.data.record)
-      });
+      }).finally(()=>setIsLoading(false))
   }, []);
-  return (
+  return isLoading?(<Loader title={'Home'}/>):(
     <>
       <Header />
       <main>
@@ -222,6 +224,6 @@ function Root() {
         </a>
       </footer>
     </>
-  );
+  )
 }
 export default Root;

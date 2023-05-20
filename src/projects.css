@@ -183,7 +183,6 @@
 }
 .p_slider_card img {
   width: 20rem;
-  height: 12rem;
   object-fit: cover;
   border-radius: 0.2rem;
 }
@@ -234,7 +233,8 @@
   width: auto;
   padding: 0.8rem 0.8rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: .5rem;
   align-items: center;
   background-color: #2c2c2c;
   border-radius: 0.2rem;

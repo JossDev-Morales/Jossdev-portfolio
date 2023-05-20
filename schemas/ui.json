@@ -54,7 +54,7 @@
       "pagetitle": "My Projects",
       "overview": "Welcome to my projects section, here you can find some of my work, im currently working to grow up my portfolio.",
       "span": "Have fun",
-      "tagbtns": ["all", "Js React", "Js Vanilla"],
+      "tagbtns": ["All", "MPA", "SPA","API"],
       "deploy":{"en":"Deployment","es":"Despliegue"}
     },
     "certifications": {}
@@ -114,7 +114,7 @@
       "pagetitle": "Mis Proyectos",
       "overview": "Bienvenido a mi sección de proyectos, aquí podrás encontrar algunos de mis trabajos, actualmente estoy trabajando para hacer crecer mi portafolio.",
       "span": "Diviertete",
-      "tagbtns": ["Todos", "Js React", "Js Vanilla"],
+      "tagbtns": ["All", "MPA", "SPA","API"],
       "deploy":{"en":"Deployment","es":"Despliegue"}
     },
     "certifications": {}

@@ -18,6 +18,7 @@ function Project({ element }) {
     left: "left",
     right: "right",
   };
+  
   const slidePos = (direction) => {
     if (direction == directions.left) {
       if (sliderPosition == 0) {
@@ -171,7 +172,6 @@ function Project({ element }) {
           </div>
         </div>
         <div className="p_content">
-          {" "}
           <motion.h2
             animate={{ opacity: 0, transitionDuration: ".3s" }}
             whileInView={{ opacity: 1 }}

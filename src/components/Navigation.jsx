@@ -25,7 +25,7 @@ function Navigation() {
                 <FontAwesomeIcon  icon={isOpen?faXmark:faBars} beatFade={iconAnimation} style={{color: "#f6f7f9",}} /></div>
             <div className="icon"><img src={jossdev} alt="Joss Dev icon" /></div>
             <div className="nav__btns">
-                <div className="nav__btn-e btn" onClick={()=>{setTimeout(()=>navigate("/"),200)}}>{data.menu?.btn1}</div>
+                <div className="nav__btn-e btn" onClick={()=>navigate("/")}>{data.menu?.btn1}</div>
                 <div className="nav__btn-e btn" onClick={()=>navigate("/projects")}>{data.menu?.btn2}</div>
                 <div className="nav__btn-e btn" onClick={()=>navigate("/certifications")}>{data.menu?.btn3}</div>
             </div>
@@ -34,19 +34,19 @@ function Navigation() {
             <div className="icon-mobile"><img src={jossdev} alt="Joss Dev icon" /></div>
             <div className='menu-options' >
                 <div className="menu-option" onClick={()=>{
-                    setTimeout(()=>navigate("/"),200)
+                    setTimeout(()=>navigate("/"),0)
                     if (window.location.hash.split('/').pop()!=='') {
                         document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
                     }
                 }}>{data.menu?.btn1} <FontAwesomeIcon icon={faHouse} /></div>
                 <div className="menu-option" onClick={()=>{
-                    setTimeout(()=>navigate("/projects"),200)
+                    setTimeout(()=>navigate("/projects"),0)
                     if (window.location.hash.split('/').pop()!=='projects') {
                         document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
                     }
                     }}>{data.menu?.btn2} <FontAwesomeIcon icon={faFolder} /></div>
                 <div className="menu-option" onClick={()=>{
-                    setTimeout(()=>navigate("/certifications"),200)
+                    setTimeout(()=>navigate("/certifications"),0)
                     if (window.location.hash.split('/').pop()!=='certifications') {
                         document.querySelector('#root').setAttribute('style','overflow-y:scroll;')
                     }

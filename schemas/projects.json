@@ -8,13 +8,13 @@
     "large-description-en": "A modern and pretty e-commerce (e-commerce) application that allows you to search and filter between different products, add your favorites to cart and buy them, you can register and save your settings and a user avatar.",
     "image": "https://i.ibb.co/NSHsQpz/mycommerce-mockup.webp",
     "images": [
+      "https://i.ibb.co/NSHsQpz/mycommerce-mockup.webp",
       "https://i.ibb.co/k921974/image.png",
       "https://i.ibb.co/WkTPCJD/image-3.png",
       "https://i.ibb.co/TYTXwyd/image-5.png",
       "https://i.ibb.co/NpHtKX0/image-4.png",
       "https://i.ibb.co/7pwPgYj/image-1.png",
-      "https://i.ibb.co/128nftn/image-2.png",
-      "https://i.ibb.co/NSHsQpz/mycommerce-mockup.webp"
+      "https://i.ibb.co/128nftn/image-2.png"
     ],
     "type": "MPA",
     "github": "https://github.com/JossDev-Morales/Ecommerce--final",
@@ -23,6 +23,14 @@
       {
         "title": "Java Script",
         "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
       },
       {
         "route": "vscode-icons:file-type-reactjs",
@@ -39,6 +47,170 @@
       {
         "route": "logos:react-router",
         "title": "React router"
+      }
+    ]
+  },
+  {
+    "id": "93878b0e-35ff-4adc-afe3-2ece18ef2c30",
+    "title": "Portfolio Layout",
+    "description-es": "Un diseño de portafolio simple con una interfaz agradable y moderna",
+    "description-en": "A simple portfolio design layout with a nice and modern interface",
+    "large-description-es": "Diseño de un portafolio web para desarrolladores, es una maqueta con una interfaz de usuario moderna y agradable, responsiva e interactiva, donde puedes mostrarle al mundo bastante bien tus habilidades y quien eres",
+    "large-description-en": "Web Portfolio Design for Developers, it is a mockup with modern and nice user interface, responsive and interactive, where you can show the world quite well your skills and who you are",
+    "image": "https://i.ibb.co/kXkB9Fd/portfolio-layout-mockup.webp",
+    "images": [
+      "https://i.ibb.co/kXkB9Fd/portfolio-layout-mockup.webp",
+      "https://i.ibb.co/GHrhvJt/image.png",
+      "https://i.ibb.co/FK0NPZ0/image-720-1.png",
+      "https://i.ibb.co/DD4d5Wc/image-720-2.png",
+      "https://i.ibb.co/Tv8yFRV/image-720-3.png",
+      "https://i.ibb.co/MGVB8qR/image-720.png"
+    ],
+    "type": "SPA",
+    "github": "https://github.com/JossDev-Morales/Portfolio",
+    "link": "https://my-portfolio-layout.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      }
+    ]
+  },
+  {
+    "id": "298ac761-7909-4323-8e94-bf086aa4791b",
+    "title": "Pokedex wiki",
+    "description-es": "Una app para navegar entre los diferentes pokemon del mundo pokemon y divertirte.oderna",
+    "description-en": "An app to navigate between the different pokemon in the pokemon world and have fun.",
+    "large-description-es": "Una aplicación donde puedes buscar y filtrar pokemon por tipo, ver sus estadísticas, habilidades y movimientos, con una interfaz agradable, diviértete en el mundo pokemon",
+    "large-description-en": "An app where you can search and filter pokemon by type, see their stats, abilities and movements, with a nice interface, have fun in the pokemon world",
+    "image": "https://i.ibb.co/R68FLvz/pokedex-mockup.webp",
+    "images": [
+      "https://i.ibb.co/R68FLvz/pokedex-mockup.webp",
+      "https://i.ibb.co/GML4dPt/image-1.png",
+      "https://i.ibb.co/QKynJpP/image-2.png",
+      "https://i.ibb.co/CBMGfy9/image-3.png",
+      "https://i.ibb.co/n036kpR/image-4.png",
+      "https://i.ibb.co/M1JBcnd/image.png"
+    ],
+    "type": "MPA",
+    "github": "https://github.com/JossDev-Morales/Pokedex",
+    "link": "https://master-pokedex.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      },
+      {
+        "route": "vscode-icons:file-type-reactjs",
+        "title": "React"
+      },
+      {
+        "route": "logos:react-router",
+        "title": "React router"
+      },
+      {
+        "route": "simple-icons:axios",
+        "title": "Axios"
+      },
+      {
+        "route": "logos:redux",
+        "title": "Redux"
+      }
+    ]
+  },
+  {
+    "id": "93878b0e-35ff-4adc-afe3-2ece18ef2c30",
+    "title": "Portfolio Layout",
+    "description-es": "Un diseño de portafolio simple con una interfaz agradable y moderna",
+    "description-en": "A simple portfolio design layout with a nice and modern interface",
+    "large-description-es": "Diseño de un portafolio web para desarrolladores, es una maqueta con una interfaz de usuario moderna y agradable, responsiva e interactiva, donde puedes mostrarle al mundo bastante bien tus habilidades y quien eres",
+    "large-description-en": "Web Portfolio Design for Developers, it is a mockup with modern and nice user interface, responsive and interactive, where you can show the world quite well your skills and who you are",
+    "image": "https://i.ibb.co/kXkB9Fd/portfolio-layout-mockup.webp",
+    "images": [
+      "https://i.ibb.co/kXkB9Fd/portfolio-layout-mockup.webp",
+      "https://i.ibb.co/GHrhvJt/image.png",
+      "https://i.ibb.co/FK0NPZ0/image-720-1.png",
+      "https://i.ibb.co/DD4d5Wc/image-720-2.png",
+      "https://i.ibb.co/Tv8yFRV/image-720-3.png",
+      "https://i.ibb.co/MGVB8qR/image-720.png"
+    ],
+    "type": "SPA",
+    "github": "https://github.com/JossDev-Morales/Portfolio",
+    "link": "https://my-portfolio-layout.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      }
+    ]
+  },
+  {
+    "id": "298ac761-7909-4323-8e94-bf086aa4791b",
+    "title": "Pokedex wiki",
+    "description-es": "Una app para navegar entre los diferentes pokemon del mundo pokemon y divertirte.oderna",
+    "description-en": "An app to navigate between the different pokemon in the pokemon world and have fun.",
+    "large-description-es": "Una aplicación donde puedes buscar y filtrar pokemon por tipo, ver sus estadísticas, habilidades y movimientos, con una interfaz agradable, diviértete en el mundo pokemon",
+    "large-description-en": "An app where you can search and filter pokemon by type, see their stats, abilities and movements, with a nice interface, have fun in the pokemon world",
+    "image": "https://i.ibb.co/R68FLvz/pokedex-mockup.webp",
+    "images": [
+      "https://i.ibb.co/R68FLvz/pokedex-mockup.webp",
+      "https://i.ibb.co/GML4dPt/image-1.png",
+      "https://i.ibb.co/QKynJpP/image-2.png",
+      "https://i.ibb.co/CBMGfy9/image-3.png",
+      "https://i.ibb.co/n036kpR/image-4.png",
+      "https://i.ibb.co/M1JBcnd/image.png"
+    ],
+    "type": "MPA",
+    "github": "https://github.com/JossDev-Morales/Pokedex",
+    "link": "https://master-pokedex.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      },
+      {
+        "route": "vscode-icons:file-type-reactjs",
+        "title": "React"
+      },
+      {
+        "route": "simple-icons:axios",
+        "title": "Axios"
+      },
+      {
+        "route": "logos:redux",
+        "title": "Redux"
       }
     ]
   }
