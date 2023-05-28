@@ -18,6 +18,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { changeCont } from './store/slice/Content.slice';
 import ui from '../schemas/ui.json'
 import { changeRes } from './store/slice/response.slice';
+import Resume from './pages/Resume';
 
 function App() {
   
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Root  />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="/resumes/:lenguage" element={<Resume/>}/>
         </Routes>
       </HashRouter>
     </>

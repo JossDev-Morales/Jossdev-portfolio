@@ -89,9 +89,61 @@ header:before {
 }
 
 .resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.048);
+  cursor: pointer;
+  padding: 2%;
   background-color: #fe004a;
   text-align: center;
   cursor: pointer;
+}
+.ResumeSubmenu-cont{
+  width: auto;
+  height: auto;
+  background-color: #141414;
+  border-radius: .3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+}
+.ResumeSubmenu-cont li{
+  width: 9rem;
+  height: auto;
+  padding:.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+}
+.ResumeSubmenu-cont:hover{
+  background-color: #14141436;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ResumeSubmenu-cont li:hover{
+  background-color: #ffffff2a;
+}
+
+.ResumeSubmenu-cont p{
+  width: auto;
+}
+#ResumeSub1{
+  border-top-right-radius: .3rem;
+  border-top-left-radius: .3rem;
+}
+#ResumeSub3{
+  border-bottom-right-radius: .3rem;
+  border-bottom-left-radius: .3rem;
 }
 
 .btns-header {
@@ -254,11 +306,10 @@ nav .icon {
 
 .custom-shape-divider-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
   overflow: hidden;
-  line-height: 0;
   transform: rotate(180deg);
 }
 
@@ -881,7 +932,9 @@ footer a {
     right: 3%;
     top: 15%;
   }
-
+  .resume:hover{
+    transform: scale(1.02);
+  }
 }
 
 @media screen and (min-width:1200px) {

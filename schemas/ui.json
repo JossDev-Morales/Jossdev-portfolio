@@ -12,6 +12,11 @@
         },
         "es": {
           "title": "Resume"
+        },
+        "submenu":{
+          "share":"Share",
+          "download":"Download",
+          "view":"View"
         }
       },
       "about": {
@@ -57,7 +62,11 @@
       "tagbtns": ["All", "MPA", "SPA","API"],
       "deploy":{"en":"Deployment","es":"Despliegue"}
     },
-    "certifications": {}
+    "certifications": {
+      "pagetitle":"My Certifications",
+      "overview":"welcome, here you can find some of my certificates, these are proof of my knowledge and skills, although my greatest recognition is the happiness of my friends and co-workers. :)",
+      "span":"Check it out"
+    }
   },
   "es": {
     "menu": {
@@ -78,6 +87,11 @@
         },
         "es": {
           "title": "Cvitae"
+        },
+        "submenu":{
+          "share":"Compartir",
+          "download":"Descargar",
+          "view":"Ver"
         }
       },
       "built": {
