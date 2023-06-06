@@ -1,65 +1,50 @@
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
 import Loader from "../components/loader";
-import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "../certifications.css";
 import LightBox from "../components/LightBox-certifications";
-import ReactplosiveModal from "reactplosive-modal";
+import Footer from "../components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faLanguage } from "@fortawesome/free-solid-svg-icons";
+import { changeCont } from "../store/slice/Content.slice";
+import { changeRes } from "../store/slice/response.slice";
+import ui from "../../schemas/ui.json";
+import axios from "axios";
 function Certifications() {
-  const [isLoading, setIsLoading] = useState(false);
+  const dispatch = useDispatch();
+  const [isLoading, setIsLoading] = useState(true);
   const currentData = useSelector((state) => state.Response);
   const data = useSelector((state) => state.Content);
-  const [isOpenLB,setOpenLb]=useState(false)
-  const [LightBoxContext,setLightBoxContext]=useState({})
-  const [certifications, setCertifications] = useState([
-    {
-      name: "Fundamentos de Desarrollo Web",
-      image:
-        "https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/47731177315743.png",
-      type: "Education Badge Class",
-      tags: [
-        "Web Development",
-        "Cascading Style Sheets (CSS)",
-        "JavaScript (Programming Language)",
-        "HyperText Markup Language (HTML)",
-        "Web Design",
-      ],
-      issuer: {
-        name: "Academlo",
-        image:
-          "https://api.sertifier.com/userdata/08d9dad1-9e6f-61d5-c24d-ed8404a6fae0/e7fec3bf-d5f7-476b-a1d1-fb8db4ffe735.png",
-        link: "https://www.academlo.com/",
+  const [isOpenLB, setOpenLb] = useState(false);
+  const [LightBoxContext, setLightBoxContext] = useState({});
+  const [certifications, setCertifications] = useState([]);
+  useEffect(() => {
+    axios.get("https://api.jsonbin.io/v3/b/64750cb58e4aa6225ea64b89", {
+      headers: {
+        "X-Access-Key":
+          "$2b$10$e98drt8xbxpgLUdPBnsHuu.3YT1PCK1NnMizHwUXdIokGYD/6g5NS",
       },
-    },
-    {
-      name: "Desarrollo de Aplicaciones Web con React",
-      image:
-        "https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/20176558465037.png",
-      type: "Education Badge Class",
-      tags: [
-        "JavaScript Frameworks",
-        "JavaScript (Programming Language)",
-        "Full Stack Software Engineering",
-        "React.js",
-        "Front End Design",
-        "Object-Oriented JavaScript",
-        "React Jsx",
-      ],
-      issuer: {
-        name: "Academlo",
-        image:
-          "https://api.sertifier.com/userdata/08d9dad1-9e6f-61d5-c24d-ed8404a6fae0/e7fec3bf-d5f7-476b-a1d1-fb8db4ffe735.png",
-        link: "https://www.academlo.com/",
-      },
-    },
-  ]);
-  function LightBoxSwitcher(context){
+    })
+    .then(res=>setCertifications(res.data.record))
+    .finally(()=>{setIsLoading(false)})
+  }, []);
+  function LightBoxSwitcher(context) {
     if (isOpenLB) {
-      setOpenLb(false)
-    }else if(!isOpenLB){
-      setLightBoxContext(context)
-      setOpenLb(true)
+      setOpenLb(false);
+    } else if (!isOpenLB) {
+      setLightBoxContext(context);
+      setOpenLb(true);
+    }
+  }
+  function switchLang() {
+    if (currentData == "en") {
+      dispatch(changeCont(ui.es));
+      dispatch(changeRes("es"));
+    } else if (currentData == "es") {
+      dispatch(changeCont(ui.en));
+      dispatch(changeRes("en"));
     }
   }
   return isLoading ? (
@@ -71,6 +56,16 @@ function Certifications() {
       <div className="hero-certifications">
         <Navigation />
         <h2>{data.certifications?.pagetitle}</h2>
+        <div className="btns-header btns-header-cert">
+          <div
+            onClick={() => {
+              switchLang();
+            }}
+            className="header-switch header-switch-cert"
+          >
+            <FontAwesomeIcon icon={faLanguage} />
+          </div>
+        </div>
       </div>
       <div className="overview-certifications">
         <p>{data.certifications?.overview}</p>
@@ -79,29 +74,96 @@ function Certifications() {
       <div className="certifications-list">
         {certifications.map((e) => (
           <div className="cert">
-            <div className="imageSection" onClick={()=>{LightBoxSwitcher(e)}}>
-              <img src={e?.image} alt="" />
+            <div
+              className="imageSection"
+              onClick={() => {
+                LightBoxSwitcher(e);
+              }}
+            >
+              <img src={e?.image} alt=""/>
             </div>
             <div className="cert_info">
-              <h3 onClick={()=>{LightBoxSwitcher(e)}}>{e?.name}</h3>
+              <h3
+                onClick={() => {
+                  LightBoxSwitcher(e);
+                }}
+              >
+                {e?.name}
+              </h3>
               <span>{e?.type}</span>
               <div className="cert_issuer">
                 <div className="cert_issuer_img">
-                  <img src={e?.issuer?.image} alt={`Issuer ${e?.issuer.name}`} />
+                  <img
+                    src={e?.issuer?.image}
+                    alt={`Issuer ${e?.issuer.name}`}
+                  />
                 </div>
-                <a href={e?.issuer?.link} target="_blank">{e?.issuer.name}</a>
+                <a href={e?.issuer?.link} target="_blank">
+                  {e?.issuer.name}
+                </a>
               </div>
             </div>
           </div>
         ))}
       </div>
-      {isOpenLB&&(
-      <ReactplosiveModal
-      isVisible={isOpenLB}
-      onClose={()=>setOpenLb(false)}
-      >
-
-      </ReactplosiveModal>
+      <Footer />
+      {isOpenLB && (
+        <LightBox setterVisible={setOpenLb}>
+          <div className="modal_infosection">
+            <a
+              href={LightBoxContext.link}
+              title="Link to certification page"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2>{LightBoxContext.name}</h2>
+            </a>
+            <ul>
+              {LightBoxContext.tags.map((tag) => (
+                <li>{tag}</li>
+              ))}
+            </ul>
+            {LightBoxContext.duration && (
+              <span>
+                <span>{currentData == "en" ? "Duration" : "Duracion"} </span>
+                {LightBoxContext.duration}{" "}
+                {currentData == "en"
+                  ? LightBoxContext.duration > 1
+                    ? "Months"
+                    : " Month"
+                  : LightBoxContext.duration > 1
+                  ? "Meses"
+                  : " Mes"}
+              </span>
+            )}
+            <div className="modal_buttons">
+              <div
+                onClick={() => {
+                  const a = document.createElement("a");
+                  a.href = LightBoxContext.image;
+                  a.download = "certifier.png";
+                  a.click();
+                }}
+                className="modal_downloadbutton"
+              >
+                <FontAwesomeIcon icon={faDownload} />{" "}
+                {currentData == "en" ? "Download PNG" : "Descargar PNG"}
+              </div>
+              <div
+                onClick={() => {
+                  const a = document.createElement("a");
+                  a.href = LightBoxContext.pdf;
+                  a.download = "certifier_pdf.pdf";
+                  a.click();
+                }}
+                className="modal_downloadbutton"
+              >
+                <FontAwesomeIcon icon={faDownload} />{" "}
+                {currentData == "en" ? "Download PDF" : "Descargar PDF"}
+              </div>
+            </div>
+          </div>
+        </LightBox>
       )}
     </>
   );

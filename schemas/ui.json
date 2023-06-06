@@ -64,7 +64,7 @@
     },
     "certifications": {
       "pagetitle":"My Certifications",
-      "overview":"welcome, here you can find some of my certificates, these are proof of my knowledge and skills, although my greatest recognition is the happiness of my friends and co-workers. :)",
+      "overview":"Welcome, here you can find some of my certificates, these are proof of my knowledge and skills, although my greatest recognition is the happiness of my friends and co-workers. :)",
       "span":"Check it out"
     }
   },
@@ -131,6 +131,10 @@
       "tagbtns": ["All", "MPA", "SPA","API"],
       "deploy":{"en":"Deployment","es":"Despliegue"}
     },
-    "certifications": {}
+    "certifications": {
+      "pagetitle":"Mis Certificaciones",
+      "overview":"Bienvenido, aquí puedes encontrar algunos de mis certificados, estos son prueba de mis conocimientos y habilidades, aunque mi mayor reconocimiento es la felicidad de mis amigos y compañeros de trabajo. :)",
+      "span":"Hechale un vistazo"
+    }
   }
 }

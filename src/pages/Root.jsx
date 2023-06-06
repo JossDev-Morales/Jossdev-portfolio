@@ -11,6 +11,7 @@ import Form from "../components/Form";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "../components/loader";
+import Footer from "../components/Footer";
 function Root() {
   const data = useSelector((state) => state.Content);
   const [stack, setStack] = useState([]);
@@ -210,19 +211,7 @@ function Root() {
           </div>
         </div>
       </div>
-      <footer>
-        <a
-          href="https://github.com/JossDev-Morales/Jossdev-portfolio"
-          target="_blank"
-        >
-          <p>
-            Coded by Joss<span>Dev</span>
-          </p>
-          <div className="social_icon">
-            <Icon icon="ph:github-logo-fill" color="white" />
-          </div>
-        </a>
-      </footer>
+      <Footer/>
     </>
   )
 }

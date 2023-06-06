@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Fundamentos de Desarrollo Web",
+    "image": "https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/47731177315743.png",
+    "type": "Education Badge Class",
+    "duration": "1",
+    "pdf": "https://sertifier-storage.s3.eu-central-1.amazonaws.com/pdf/47731177315743.pdf",
+    "tags": [
+      "Web Development",
+      "Cascading Style Sheets (CSS)",
+      "JavaScript (Programming Language)",
+      "HyperText Markup Language (HTML)",
+      "Web Design"
+    ],
+    "link": "https://certificates.academlo.com/en/verify/47731177315743",
+    "issuer": {
+      "name": "Academlo",
+      "image": "https://api.sertifier.com/userdata/08d9dad1-9e6f-61d5-c24d-ed8404a6fae0/e7fec3bf-d5f7-476b-a1d1-fb8db4ffe735.png",
+      "link": "https://www.academlo.com/"
+    }
+  },
+  {
+    "name": "Desarrollo de Aplicaciones Web con React",
+    "image": "https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/20176558465037.png",
+    "type": "Education Badge Class",
+    "duration": "2",
+    "pdf": "https://sertifier-storage.s3.eu-central-1.amazonaws.com/pdf/20176558465037.pdf",
+    "tags": [
+      "JavaScript Frameworks",
+      "JavaScript (Programming Language)",
+      "Full Stack Software Engineering",
+      "React.js",
+      "Front End Design",
+      "Object-Oriented JavaScript",
+      "React Jsx"
+    ],
+    "link": "https://certificates.academlo.com/en/verify/20176558465037",
+    "issuer": {
+      "name": "Academlo",
+      "image": "https://api.sertifier.com/userdata/08d9dad1-9e6f-61d5-c24d-ed8404a6fae0/e7fec3bf-d5f7-476b-a1d1-fb8db4ffe735.png",
+      "link": "https://www.academlo.com/"
+    }
+  },
+  {
+    "name": "Back-End Node",
+    "image": "https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/42619860341482.png",
+    "type": "Education Badge Class",
+    "duration": "2",
+    "pdf": "https://sertifier-storage.s3.eu-central-1.amazonaws.com/pdf/42619860341482.pdf",
+    "tags": [
+      "JavaScript (Programming Language)",
+      "Node.js",
+      "Back End (Software Engineering)"
+    ],
+    "link": "https://certificates.academlo.com/en/verify/42619860341482",
+    "issuer": {
+      "name": "Academlo",
+      "image": "https://api.sertifier.com/userdata/08d9dad1-9e6f-61d5-c24d-ed8404a6fae0/e7fec3bf-d5f7-476b-a1d1-fb8db4ffe735.png",
+      "link": "https://www.academlo.com/"
+    }
+  },
+  {
+    "name": "Programa Full Stack de Desarollo",
+    "image": "https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/30511003921862.png",
+    "type": "Education Badge Class",
+    "duration": "5",
+    "pdf": "https://sertifier-storage.s3.eu-central-1.amazonaws.com/pdf/30511003921862.pdf",
+    "tags": [
+      "JavaScript Frameworks",
+      "JavaScript (Programming Language)",
+      "Full Stack Software Engineering",
+      "Problem Solving",
+      "React.js",
+      "Node.js",
+      "Programming Tools",
+      "Object-Oriented Programming (OOP)"
+    ],
+    "link": "https://certificates.academlo.com/en/verify/30511003921862",
+    "issuer": {
+      "name": "Academlo",
+      "image": "https://api.sertifier.com/userdata/08d9dad1-9e6f-61d5-c24d-ed8404a6fae0/e7fec3bf-d5f7-476b-a1d1-fb8db4ffe735.png",
+      "link": "https://www.academlo.com/"
+    }
+  }
+]

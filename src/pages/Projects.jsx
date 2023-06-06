@@ -2,11 +2,18 @@ import axios from "axios";
 import NavigationCom from "../components/Navigation";
 import "./../projects.css";
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Project from "../components/Project";
 import Loader from "../components/loader";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import { changeCont } from "../store/slice/Content.slice";
+import { changeRes } from "../store/slice/response.slice";
+import ui from '../../schemas/ui.json'
+import Footer from "../components/Footer";
 
 function Projects() {
+  const dispatch=useDispatch()
   const data = useSelector((state) => state.Content);
   const [isLoading,setIsLoading]=useState(true)
   const currentData = useSelector((state) => state.Response);
@@ -37,12 +44,30 @@ function Projects() {
          
       }).finally(()=>{setIsLoading(false)})
   }, []);
-
+  function switchLang() {
+    if (currentData == "en") {
+      dispatch(changeCont(ui.es));
+      dispatch(changeRes("es"));
+    } else if (currentData == "es") {
+      dispatch(changeCont(ui.en));
+      dispatch(changeRes("en"));
+    }
+  }
   return isLoading?(<Loader title={currentData=="en"?"My Projects":"Mis Proyectos"}/>): (
     <>
       <div className="hero">
         <NavigationCom />
         <h2>{data.projects?.pagetitle}</h2>
+        <div className="btns-header btns-header-cert">
+          <div
+            onClick={() => {
+              switchLang();
+            }}
+            className="header-switch header-switch-cert"
+          >
+            <FontAwesomeIcon icon={faLanguage} />
+          </div>
+        </div>
       </div>
       <div className="overview">
         <p>{data.projects?.overview}</p>
@@ -52,6 +77,7 @@ function Projects() {
         {data.projects?.tagbtns.map(tag=><div onClick={()=>{filter(tag)}} key={tag} className="tag">{tag}</div>)}
       </div>
       {filtered?.map(element=><Project element={element} key={element.id}/>)}
+      <Footer/>
     </>
   )
 }

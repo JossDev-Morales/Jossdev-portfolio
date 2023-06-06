@@ -4,17 +4,20 @@ import { faImages, faLanguage } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { changeCont } from "../store/slice/Content.slice";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Navigation from "./Navigation";
 import ui from "./../../schemas/ui.json";
 import { changeRes } from "../store/slice/response.slice";
 import ResumeSubmenu from "./ResumeSubmenu";
+import image from '../assets/2.jpg'
 function Header() {
   const [resumeSubmenu, setResumeSubmenu] = useState(false);
   const [resumeEventContext, setResumeEC] = useState({});
   const data = useSelector((state) => state.Content);
   const dispatch = useDispatch();
   const currentData = useSelector((state) => state.Response);
+  const header=useRef()
+  const [switchImagePos,setSwitchImagePos]=useState(1)
   var mouseX, mouseY;
   var ww = window.innerWidth;
   var wh = window.innerHeight;
@@ -38,7 +41,7 @@ function Header() {
     }
   }
   function switchImage() {
-    console.log('xd');
+ 
   }
   function resumeSubmenuSetter(event, lenguage) {
     if (resumeSubmenu == true) {
@@ -58,7 +61,7 @@ function Header() {
   });
   return (
     <>
-      <header className="title">
+      <header className="title" ref={header}>
         <Navigation />
         <div className="resumes">
           <div
