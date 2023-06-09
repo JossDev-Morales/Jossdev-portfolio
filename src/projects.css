@@ -183,6 +183,9 @@
 }
 .p_slider_card img {
   width: 20rem;
+  height: 14rem;
+  overflow: visible;
+  background-color: #fe004a;
   object-fit: cover;
   border-radius: 0.2rem;
 }
@@ -196,6 +199,7 @@
   background-color: rgba(44, 44, 44, 0.918);
   border-radius: 0.2rem;
   box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.534);
+  transform: translateX(0);
 }
 .p_slider_arrow:hover {
   background-color: rgba(68, 68, 68, 0.918);

@@ -12,6 +12,9 @@ import { changeCont } from "../store/slice/Content.slice";
 import { changeRes } from "../store/slice/response.slice";
 import ui from "../../schemas/ui.json";
 import axios from "axios";
+import BlurImage from "../components/blurImage";
+import { motion } from "framer-motion";
+
 function Certifications() {
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(true);
@@ -21,14 +24,17 @@ function Certifications() {
   const [LightBoxContext, setLightBoxContext] = useState({});
   const [certifications, setCertifications] = useState([]);
   useEffect(() => {
-    axios.get("https://api.jsonbin.io/v3/b/64750cb58e4aa6225ea64b89", {
-      headers: {
-        "X-Access-Key":
-          "$2b$10$e98drt8xbxpgLUdPBnsHuu.3YT1PCK1NnMizHwUXdIokGYD/6g5NS",
-      },
-    })
-    .then(res=>setCertifications(res.data.record))
-    .finally(()=>{setIsLoading(false)})
+    axios
+      .get("https://api.jsonbin.io/v3/b/64750cb58e4aa6225ea64b89", {
+        headers: {
+          "X-Access-Key":
+            "$2b$10$e98drt8xbxpgLUdPBnsHuu.3YT1PCK1NnMizHwUXdIokGYD/6g5NS",
+        },
+      })
+      .then((res) => setCertifications(res.data.record))
+      .finally(() => {
+        setIsLoading(false);
+      });
   }, []);
   function LightBoxSwitcher(context) {
     if (isOpenLB) {
@@ -73,14 +79,23 @@ function Certifications() {
       </div>
       <div className="certifications-list">
         {certifications.map((e) => (
-          <div className="cert">
+          <motion.div className="cert"
+          animate={{opacity:0,transitionDelay:".1s",transitionDuration:".4s"}}
+          whileInView={{opacity:1}}
+          >
             <div
               className="imageSection"
               onClick={() => {
                 LightBoxSwitcher(e);
               }}
             >
-              <img src={e?.image} alt=""/>
+              <BlurImage
+              config={{classWrapper:"cert-image"}}
+                    src={e?.image}
+                    lowSrc={
+                      e?.lowQualityImage
+                    }
+                  />
             </div>
             <div className="cert_info">
               <h3
@@ -93,17 +108,15 @@ function Certifications() {
               <span>{e?.type}</span>
               <div className="cert_issuer">
                 <div className="cert_issuer_img">
-                  <img
-                    src={e?.issuer?.image}
-                    alt={`Issuer ${e?.issuer.name}`}
-                  />
+                  <img src={e.issuer.image} alt="" />
+                  
                 </div>
                 <a href={e?.issuer?.link} target="_blank">
                   {e?.issuer.name}
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <Footer />

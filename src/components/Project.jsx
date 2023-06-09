@@ -136,7 +136,8 @@ function Project({ element }) {
               onClick={() => {
                 slidePos(directions.left);
               }}
-              animate={{ translateX: 12 }}
+              animate={{ translateX: 0 }}
+              whileInView={{translateX:12}}
               whileTap={{ scale: 1.1 }}
               className="p_slider_arrow"
             >
@@ -147,7 +148,8 @@ function Project({ element }) {
               onClick={() => {
                 slidePos(directions.right);
               }}
-              animate={{ translateX: -12 }}
+              animate={{ translateX: 0 }}
+              whileInView={{translateX:-12}}
               whileTap={{ scale: 1.1 }}
               className="p_slider_arrow"
             >
