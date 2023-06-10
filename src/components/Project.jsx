@@ -169,7 +169,7 @@ function Project({ element }) {
                 whileInView={{ translateX: 0, opacity: 1 }}
                 className="project_tech"
               >
-                <Icon icon={tech.route} />
+                <Icon icon={tech.route} color={tech.color?tech.color:"#fff"} />
               </motion.div>
             ))}
           </div>

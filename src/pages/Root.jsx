@@ -138,8 +138,8 @@ function Root() {
               <h2>{element.title}</h2>
               <a href={element.link} target="_blank">
                 Docs
-              </a>
-              <Icon icon={element.route} width="100" />
+              </a>{console.log(element.color)}
+              <Icon icon={element.route} width="100" color={element.color?element.color:"#fff"} />
             </div>
           ))}
         </div>

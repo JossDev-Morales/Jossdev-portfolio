@@ -1,9 +1,11 @@
 *{
   padding: 0%;
   margin: 0%;
-  color: white;
   box-sizing: border-box;
   transition: all .2s ease;
+}
+h2,h3,h4,h1,span,p,a,div,header,body,button,input{
+  color: white;
 }
 html{
   width: 100vw;

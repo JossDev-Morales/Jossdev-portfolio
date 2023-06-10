@@ -25,7 +25,7 @@
     "color": "#5a29e4",
     "route": "simple-icons:axios",
     "title": "Axios",
-    "link": "https://reactjs.org/"
+    "link": "https://axios-http.com/es/docs/intro"
   },
   {
     "id": "2ce96723-f608-436a-8a50-87730ae0b602",
@@ -61,5 +61,55 @@
     "route": "vscode-icons:file-type-html",
     "title": "Html",
     "link": "https://reactjs.org/"
+  },
+  {
+    "id":"5c7f8ba8-3614-4cdb-aa3a-61369f1271da",
+    "color":"#5fa04e",
+    "route":"akar-icons:node-fill",
+    "title":"Node",
+    "link":"https://nodejs.org/es"
+  },
+  {
+    "id":"6dbea77c-b64c-4a6d-9b0b-c29ddb0b1a18",
+    "route":"logos:jwt",
+    "title":"JWT",
+    "link":"https://jwt.io/"
+  },
+  {
+    "id":"e1828f5e-34da-43bb-9cca-127870488502",
+    "route":"devicon:postgresql-wordmark",
+    "title":"Postgre SQL",
+    "link":"https://www.postgresql.org/"
+  },
+  {
+    "id":"69131999-8173-4213-9319-b8d399bd1698",
+    "route":"devicon:mongodb-wordmark",
+    "title":"Mongo DB",
+    "link":"https://www.mongodb.com/"
+  },
+  {
+    "id":"cf05b3f9-e1b1-4e14-bba2-2b8622333fb0",
+    "route":"skill-icons:git",
+    "title":"Git",
+    "link":"https://git-scm.com/"
+  },
+  {
+    "id":"ab04fad8-4cad-420f-989f-99389d79e24b",
+    "route":"bi:github",
+    "color":"#f0f6fc",
+    "title":"GitHub",
+    "link":"https://github.com/"
+  },
+  {
+    "id":"8ba6d656-4ec0-40d1-a75c-9fd7aee1e0fd",
+    "route":"devicon:express",
+    "title":"Express",
+    "link":"https://expressjs.com/"
+  },
+  {
+    "id":"76f872b0-0e48-4659-abcf-94af7641d5e5",
+    "route":"skill-icons:sequelize-dark",
+    "title":"Sequelize",
+    "link":"https://sequelize.org/docs/v6/"
   }
 ]

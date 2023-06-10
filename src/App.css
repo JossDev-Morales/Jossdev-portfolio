@@ -593,6 +593,9 @@ main .social_icon:hover path {
   display: none;
 
 }
+.tech svg{
+  color: #5fa04e ;
+}
 
 .tech:hover h2 {
   display: flex;

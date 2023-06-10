@@ -108,8 +108,8 @@ function Certifications() {
               <span>{e?.type}</span>
               <div className="cert_issuer">
                 <div className="cert_issuer_img">
-                  <img src={e.issuer.image} alt="" />
-                  
+                  <img  alt="" />
+                  <BlurImage src={e.issuer.image} lowSrc={e.issuer.low} config={{classWrapper:"cert-issuerImage"}}/>
                 </div>
                 <a href={e?.issuer?.link} target="_blank">
                   {e?.issuer.name}
