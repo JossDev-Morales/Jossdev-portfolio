@@ -182,11 +182,9 @@
   align-items: center;
 }
 .p_slider_card img {
-  width: 20rem;
+  width: 22rem;
   height: 14rem;
-  overflow: visible;
-  background-color: #fe004a;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 0.2rem;
 }
 .p_slider_arrow {

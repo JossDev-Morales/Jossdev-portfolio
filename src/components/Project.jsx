@@ -7,6 +7,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import BlurImage from "../components/blurImage";
 
 function Project({ element }) {
   const [width, setWidth] = useState(window.innerWidth);
@@ -143,7 +144,7 @@ function Project({ element }) {
             >
               <FontAwesomeIcon icon={faChevronLeft} />
             </motion.div>
-            <img src={element.images[sliderPosition]} alt="" />
+            <BlurImage src={element.images[sliderPosition].high} lowSrc={element.images[sliderPosition].low} config={{classWrapper:"p-img"}}/>
             <motion.div
               onClick={() => {
                 slidePos(directions.right);
