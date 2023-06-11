@@ -23,6 +23,7 @@ function Certifications() {
   const [isOpenLB, setOpenLb] = useState(false);
   const [LightBoxContext, setLightBoxContext] = useState({});
   const [certifications, setCertifications] = useState([]);
+  document.title=`Joss Dev | ${currentData=='en'?'Certifications':'Certificaciones'}`
   useEffect(() => {
     axios
       .get("https://api.jsonbin.io/v3/b/64750cb58e4aa6225ea64b89", {
@@ -61,7 +62,7 @@ function Certifications() {
     <>
       <div className="hero-certifications">
         <Navigation />
-        <h2>{data.certifications?.pagetitle}</h2>
+        <motion.h2 animate={{opacity:0}} whileInView={{opacity:1}}>{data.certifications?.pagetitle}</motion.h2>
         <div className="btns-header btns-header-cert">
           <div
             onClick={() => {

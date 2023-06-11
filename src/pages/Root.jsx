@@ -13,7 +13,9 @@ import axios from "axios";
 import Loader from "../components/loader";
 import Footer from "../components/Footer";
 function Root() {
+  document.title="Joss Dev"
   const data = useSelector((state) => state.Content);
+  const currentData = useSelector((state) => state.Response);
   const [stack, setStack] = useState([]);
   const [isLoading,setIsLoading]=useState(true)
   useEffect(() => {
@@ -23,11 +25,11 @@ function Root() {
         setStack(res.data.record)
       }).finally(()=>setIsLoading(false))
   }, []);
-  return isLoading?(<Loader title={'Home'}/>):(
+  return isLoading?(<Loader title={currentData=='en'?'Home':'Inicio'}/>):(
     <>
       <Header />
       <main>
-        <div className="socials">
+        <motion.div animate={{opacity:0,transitionDuration:'.8s',transitionDelay:'1s'}} whileInView={{opacity:1}}  className="socials">
           <div className="social_icon">
             <a href={data.home?.contact.linkedin} target="_blank">
               <Icon icon="ri:linkedin-fill" color="white" />
@@ -60,7 +62,7 @@ function Root() {
               <Icon icon="ic:baseline-discord" color="white" />
             </a>
           </div>
-        </div>
+        </motion.div>
         <div className="welcome">
           <h1>
             <span>Hi</span>,<br /> Im Josué Morales
@@ -81,9 +83,10 @@ function Root() {
             ></path>
           </svg>
         </div>
-        <div className="aboutme-title">{data.home?.about?.title}</div>
       </main>
+
       <div className="aboutme">
+      <motion.div animate={{opacity:0,top:'1rem'}} whileInView={{opacity:1,top:'2rem'}} className="aboutme-title">{data.home?.about?.title}</motion.div>
         <p>{data.home?.about.text}</p>
         <a href="#connect" className="btn aboutme-connect">
           {data.home?.about?.button}
@@ -106,7 +109,7 @@ function Root() {
         </div>
       </div>
       <div className="slider">
-        <h2>{data.home?.built?.title}</h2>
+        <motion.h2 animate={{opacity:0}} whileInView={{opacity:1}} >{data.home?.built?.title}</motion.h2>
         <motion.div className="slider-cont" title="just drag on me">
           <motion.div
             title="just drag on me"
@@ -118,6 +121,7 @@ function Root() {
               left: -((window.innerWidth * 138) / 100),
             }}
             className="grab-band"
+            
           >
             {images.map((image) => (
               <img
@@ -131,16 +135,16 @@ function Root() {
         </motion.div>
       </div>
       <div className="skills">
-        <h2 className="textkrona">{data.home?.stack?.title}</h2>
+        <motion.h2 animate={{opacity:0}} whileInView={{opacity:1}} className="textkrona">{data.home?.stack?.title}</motion.h2>
         <div className="stacklist">
           {stack?.map((element) => (
-            <div key={element.title} className="tech">
+            <motion.div animate={{opacity:0}} whileInView={{opacity:1}} key={element.title} className="tech">
               <h2>{element.title}</h2>
               <a href={element.link} target="_blank">
                 Docs
-              </a>{console.log(element.color)}
+              </a>
               <Icon icon={element.route} width="100" color={element.color?element.color:"#fff"} />
-            </div>
+            </motion.div>
           ))}
         </div>
         <Link to={"/certifications"}>{data.home?.stack?.link}</Link>

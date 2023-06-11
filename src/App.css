@@ -429,7 +429,9 @@ main .social_icon:hover path {
 
 .aboutme-title {
   position: absolute;
-  bottom: -5%;
+  font-family: 'Krona One';
+  font-size: 1.5rem;
+  transition: all .5s ease-out;
 }
 
 .aboutme p {
@@ -476,6 +478,7 @@ main .social_icon:hover path {
 .slider h2 {
   margin: 5% 0;
   text-align: center;
+  position: relative;
 }
 
 .slider-cont {
@@ -551,7 +554,7 @@ main .social_icon:hover path {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 
 .tech {

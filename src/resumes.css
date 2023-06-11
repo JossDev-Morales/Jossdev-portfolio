@@ -1,3 +1,26 @@
 .pdfViewer{
     border: transparent;
 }
+.back-to{
+    position: absolute;
+    width: auto;
+    padding: .5rem 1rem;
+    height: auto;
+    background-color: rgba(31, 31, 31, 0.479);
+    z-index: 2;
+    border-radius: 0% 0% 1rem 1rem;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    filter: drop-shadow(0 0 10px rgba(211, 211, 211, 0.514));
+    transition: all .5s ease-out;
+    font-family: 'Montserrat';
+    font-size: large;
+    font-weight: 200;
+    cursor: pointer;
+}
+.back-to:hover{
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.781));
+}

@@ -82,7 +82,8 @@ function Form({ data }) {
         <h2>{data.home?.form?.title}</h2>
         <label htmlFor="inpname">
           <span>{data.home?.form?.inputs.name}</span>
-          <input
+          <motion.input
+            animate={{opacity:0,translateX:-10}} whileInView={{opacity:1,translateX:0}} viewport={{once:true}}
             {...register("name", { required: true })}
             className="inputform"
             type="text"
@@ -95,7 +96,8 @@ function Form({ data }) {
         </label>
         <label htmlFor="inpmail">
           <span>{data.home?.form?.inputs.mail}</span>
-          <input
+          <motion.input
+            animate={{opacity:0,translateX:-10}} whileInView={{opacity:1,translateX:0}} viewport={{once:true}}
             {...register("mail", { required: true })}
             className="inputform"
             type="email"
@@ -108,14 +110,15 @@ function Form({ data }) {
         </label>
         <label htmlFor="message">
           <span>{data.home?.form?.inputs.message}</span>
-          <textarea
+          <motion.textarea
+            animate={{opacity:0,translateX:-10}} whileInView={{opacity:1,translateX:0}} viewport={{once:true}}
             {...register("message", { required: true })}
             placeholder={data.home?.form?.inputs.holder}
             className="textareaform"
             id="message"
             cols="30"
             rows="10"
-          ></textarea>
+          ></motion.textarea>
           {errors.message && (
             <FormError type={errors.message.type} clear={clearErrors} />
           )}

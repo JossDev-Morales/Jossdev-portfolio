@@ -11,6 +11,7 @@ import { changeCont } from "../store/slice/Content.slice";
 import { changeRes } from "../store/slice/response.slice";
 import ui from '../../schemas/ui.json'
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 function Projects() {
   const dispatch=useDispatch()
@@ -27,6 +28,7 @@ function Projects() {
     }
     
   }
+  document.title=`Joss Dev | ${currentData=='en'?'Projects':'Proyectos'}`
   useEffect(() => {
     axios
       .get(
@@ -57,7 +59,7 @@ function Projects() {
     <>
       <div className="hero">
         <NavigationCom />
-        <h2>{data.projects?.pagetitle}</h2>
+        <motion.h2 animate={{opacity:0}} whileInView={{opacity:1}}>{data.projects?.pagetitle}</motion.h2>
         <div className="btns-header btns-header-cert">
           <div
             onClick={() => {
