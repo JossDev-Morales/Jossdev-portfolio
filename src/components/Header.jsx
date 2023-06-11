@@ -90,14 +90,6 @@ function Header() {
         <div className="btns-header">
           <div
             onClick={() => {
-              switchImage();
-            }}
-            className="header-switch "
-          >
-            <FontAwesomeIcon icon={faImages} />
-          </div>
-          <div
-            onClick={() => {
               switchLang();
             }}
             className="header-switch"

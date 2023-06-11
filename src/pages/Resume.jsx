@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 function Resume() {
   const { lenguage } = useParams();
   const currentData = useSelector((state) => state.Response);
+  document.title=currentData=='en'?'Joss Dev | Resume '+lenguage:'Joss Dev | Curriculum '+lenguage
   return (
     <>
         <Link to={'/'} className="back-to">{currentData=='en'?'Home':'Inicio'}</Link>
