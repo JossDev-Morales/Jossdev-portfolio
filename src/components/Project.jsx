@@ -73,7 +73,7 @@ function Project({ element }) {
             transitionDuration: ".3s",
           }}
           whileInView={{ opacity: 1, translateX: 0 }}
-          src={element.image}
+          src={element?.image}
           alt="project image"
         />
         <div className="project-techs_list">
@@ -144,7 +144,7 @@ function Project({ element }) {
             >
               <FontAwesomeIcon icon={faChevronLeft} />
             </motion.div>
-            <BlurImage src={element.images[sliderPosition].high} lowSrc={element.images[sliderPosition].low} config={{classWrapper:"p-img"}}/>
+            <BlurImage src={element?.images[sliderPosition]?.high} lowSrc={element?.images[sliderPosition]?.low} config={{classWrapper:"p-img"}}/>
             <motion.div
               onClick={() => {
                 slidePos(directions.right);
