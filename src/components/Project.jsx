@@ -121,7 +121,6 @@ function Project({ element }) {
       </motion.div>
     );
   }
-  console.log(element)
   if (width > 768) {
     return (
       <motion.div
