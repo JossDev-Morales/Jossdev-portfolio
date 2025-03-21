@@ -1,5 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Subrayada&family=Montserrat:wght@200&display=swap');
-
+@font-face {
+  font-family: 'Krona One';
+  src: url('/src/assets/fonts/KronaOne-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat Subrayada';
+  src: url('/src/assets/fonts/MontserratSubrayada-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Monserrat';
+  src: url('/src/assets/fonts/Montserrat-ExtraLight.ttf');
+  font-style: normal;
+  font-weight: 200;
+}
 @font-face {
   font-family: 'belladona';
   src: url('/src/assets/Odachi/Webfont/Odachi.woff') format('woff');
