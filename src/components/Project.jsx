@@ -137,7 +137,7 @@ function Project({ element }) {
       >
         <div className="p_slider">
           <div className="p_slider_card">
-            {element.images.length > 0 ? (
+            {element.images.length > 1 ? (
               <>
                 <motion.div
                   onClick={() => {
