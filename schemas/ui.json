@@ -59,7 +59,7 @@
       "pagetitle": "My Projects",
       "overview": "Welcome to my projects section, here you can find some of my work, im currently working to grow up my portfolio.",
       "span": "Have fun",
-      "tagbtns": ["All", "MPA", "SPA","API","NPM Package"],
+      "tagbtns": ["All", "MPA", "SPA","API","NPM"],
       "deploy":{"en":"Deployment","es":"Despliegue"}
     },
     "certifications": {
