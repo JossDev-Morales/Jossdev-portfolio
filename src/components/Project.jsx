@@ -207,8 +207,8 @@ function Project({ element }) {
             <Icon icon="uiw:github" width="25" color="#f0f6fc" /> <p>Github</p>
           </motion.a>
           <motion.a
-            animate={element.deployed?{ opacity: 0, transitionDuration: ".3s" }:{ opacity: 0, transitionDuration: ".3s",pointerEvents:'none' }}
-            whileHover={element.deployed&&{ scale: 1.05 }}
+            animate={{ opacity: 0, transitionDuration: ".3s" }}
+            whileHover={{ scale: 1.05 }}
             whileInView={{ opacity: 1 }}
             href={element.link}
             target="_blank"
@@ -216,7 +216,7 @@ function Project({ element }) {
           >
             {element.deployed?currentData == "en"
               ? data.projects?.deploy.en
-              : data.projects?.deploy.es:currentData=='en'?"Not deployed":"No desplegado"}
+              : data.projects?.deploy.es:currentData=='en'?"Homepage":"Homepage"}
           </motion.a>
         </div>
       </motion.div>

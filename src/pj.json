@@ -1,0 +1,462 @@
+[
+  {
+    "id": "2b484e9b-9f6d-4243-9ccf-83fe373762ca",
+    "deployed": false,
+    "title": "BigNumber.io",
+    "description-es": "BigNumber.io es una librería para operaciones javascript para poder manejar números enteros muy grandes y números decimales muy grandes.",
+    "description-en": "BigNumber.io is a library for javascript operations to be able to handle very large integer numbers and very large decimal numbers.",
+    "large-description-es": "BigNumber.io es una librería para operaciones javascript para poder manejar números enteros muy grandes y números decimales muy grandes, dándote control sobre este número y facilitando las matemáticas básicas, con un buen manejo de errores descriptivos.",
+    "large-description-en": "BigNumber.io is a library for javascript operations to be able to handle very large integer numbers and very large decimal numbers, giving you control over this number and facilitating basic mathematics, with good handling of descriptive errors.",
+    "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/03/npm.png",
+    "lowImage": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/03/npm.png",
+    "images": [
+      {
+        "high": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/03/npm.png",
+        "low": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/03/npm.png"
+      }
+    ],
+    "type": "NPM",
+    "github": "https://github.com/JossDev-Morales/bigNumbers.io",
+    "link": "https://www.npmjs.com/package/bignumber.io",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "title":"Node",
+        "route":"akar-icons:node-fill"
+      },
+      {
+        "route": "skill-icons:git",
+        "title": "Git"
+      }
+    ]
+  },
+  {
+    "id": "dc2ab2a5-77d4-4451-8e59-16de79fcd683",
+    "deployed": false,
+    "title": "Number-converter.io",
+    "description-es": "Convertidor de numeros decimales y enteros a diferentes bases numericas.",
+    "description-en": "Converter of decimal and integer numbers in different bases.",
+    "large-description-es": "Convertidor de numeros decimales y enteros a diferentes bases numericas como octal, binario, hexadecimal y decimal y bases entre 2 y 36 a otra base numerica.",
+    "large-description-en": "Converter of decimal and integer numbers in different bases such as octal, binary, hexadecimal and decimal and bases between 2 and 36 to other number bases.",
+    "image": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH5xtASCoHjGw/articleshare-shrink_480/articleshare-shrink_480/0/1712159767340?e=1743127200&v=beta&t=2mQx9U0UKjSxH8ipDT4hC8_TtK-GqYCLJuhp0NgezFs",
+    "lowImage": "https://media.licdn.com/dms/image/sync/v2/D4E27AQH5xtASCoHjGw/articleshare-shrink_480/articleshare-shrink_480/0/1712159767340?e=1743127200&v=beta&t=2mQx9U0UKjSxH8ipDT4hC8_TtK-GqYCLJuhp0NgezFs",
+    "images": [
+    ],
+    "type": "NPM",
+    "github": "https://github.com/JossDev-Morales/number-converter.io",
+    "link": "https://my-commerce-tech.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "title":"Node",
+        "route":"akar-icons:node-fill"
+      },
+      {
+        "route": "skill-icons:git",
+        "title": "Git"
+      }
+    ]
+  },
+  {
+    "id": "c5fb0824-9dab-438d-9f72-ebf788b5765c",
+    "deployed": true,
+    "title": "My commerce",
+    "description-es": "Un e-commerce de productos electronicos donde puedes comprar tus productos favoritos",
+    "description-en": "An e-commerce of electronic products where you can buy your favorite products.",
+    "large-description-es": "Una moderna y bonita aplicación de comercio electrónico (e-commerce) que te permite buscar y filtrar entre diferentes productos, agregar tus favoritos al carrito y comprarlos, puedes registrarte y guardar tu configuración y un avatar de usuario.",
+    "large-description-en": "A modern and pretty e-commerce (e-commerce) application that allows you to search and filter between different products, add your favorites to cart and buy them, you can register and save your settings and a user avatar.",
+    "image": "https://i.ibb.co/NSHsQpz/mycommerce-mockup.webp",
+    "lowImage": "https://i.ibb.co/tKkHttY/imageedit-3-6744225660.jpg",
+    "images": [
+      {
+        "high": "https://i.ibb.co/NSHsQpz/mycommerce-mockup.webp",
+        "low": "https://i.ibb.co/tKkHttY/imageedit-3-6744225660.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/k921974/image.png",
+        "low": "https://i.ibb.co/59DLBfk/imageedit-22-3724728211.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/TYTXwyd/image-5.png",
+        "low": "https://i.ibb.co/qCQSBZh/imageedit-19-3093433618.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/NpHtKX0/image-4.png",
+        "low": "https://i.ibb.co/C6Xhm59/imageedit-16-2385550480.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/7pwPgYj/image-1.png",
+        "low": "https://i.ibb.co/2WwSx7L/imageedit-6-4187547744.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/128nftn/image-2.png",
+        "low": "https://i.ibb.co/B3h2X79/imageedit-9-8516962891.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/WkTPCJD/image-3.png",
+        "low": "https://i.ibb.co/PrVbF64/imageedit-13-8344278806.jpg"
+      }
+    ],
+    "type": "MPA",
+    "github": "https://github.com/JossDev-Morales/Ecommerce--final",
+    "link": "https://my-commerce-tech.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      },
+      {
+        "route": "logos:tailwindcss-icon",
+        "title": "Tailwind"
+      },
+      {
+        "route": "vscode-icons:file-type-reactjs",
+        "title": "React"
+      },
+      {
+        "route": "logos:redux",
+        "title": "Redux"
+      },
+      {
+        "route": "simple-icons:axios",
+        "title": "Axios",
+        "color": "#5a29e4"
+      },
+      {
+        "route": "logos:react-router",
+        "title": "React router"
+      },
+      {
+        "route": "skill-icons:git",
+        "title": "Git"
+      }
+    ]
+  },
+  {
+    "id": "93878b0e-35ff-4adc-afe3-2ece18ef2c30",
+    "deployed": true,
+    "title": "Portfolio Layout",
+    "description-es": "Un diseño de portafolio simple con una interfaz agradable y moderna",
+    "description-en": "A simple portfolio design layout with a nice and modern interface",
+    "large-description-es": "Diseño de un portafolio web para desarrolladores, es una maqueta con una interfaz de usuario moderna y agradable, responsiva e interactiva, donde puedes mostrarle al mundo bastante bien tus habilidades y quien eres",
+    "large-description-en": "Web Portfolio Design for Developers, it is a mockup with modern and nice user interface, responsive and interactive, where you can show the world quite well your skills and who you are",
+    "image": "https://i.ibb.co/kXkB9Fd/portfolio-layout-mockup.webp",
+    "lowImage": "https://i.ibb.co/kMtj4mr/imageedit-25-8776907080.jpg",
+    "images": [
+      {
+        "high": "https://i.ibb.co/kXkB9Fd/portfolio-layout-mockup.webp",
+        "low": "https://i.ibb.co/kMtj4mr/imageedit-25-8776907080.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/GHrhvJt/image.png",
+        "low": "https://i.ibb.co/XjWpLFM/imageedit-40-2738068729.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/FK0NPZ0/image-720-1.png",
+        "low": "https://i.ibb.co/jRmyMzq/imageedit-37-5611348419.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/DD4d5Wc/image-720-2.png",
+        "low": "https://i.ibb.co/f1mBkhy/imageedit-34-5917245687.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/Tv8yFRV/image-720-3.png",
+        "low": "https://i.ibb.co/F7kQX7W/imageedit-31-9291259489.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/MGVB8qR/image-720.png",
+        "low": "https://i.ibb.co/C75gmRM/imageedit-28-8671847423.jpg"
+      }
+    ],
+    "type": "SPA",
+    "github": "https://github.com/JossDev-Morales/Portfolio",
+    "link": "https://my-portfolio-layout.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      }
+    ]
+  },
+  {
+    "id": "298ac761-7909-4323-8e94-bf086aa4791b",
+    "deployed": true,
+    "title": "Pokedex wiki",
+    "description-es": "Una app para navegar entre los diferentes pokemon del mundo pokemon y divertirte.",
+    "description-en": "An app to navigate between the different pokemon in the pokemon world and have fun.",
+    "large-description-es": "Una aplicación donde puedes buscar y filtrar pokemon por tipo, ver sus estadísticas, habilidades y movimientos, con una interfaz agradable, diviértete en el mundo pokemon",
+    "large-description-en": "An app where you can search and filter pokemon by type, see their stats, abilities and movements, with a nice interface, have fun in the pokemon world",
+    "image": "https://i.ibb.co/R68FLvz/pokedex-mockup.webp",
+    "lowImage": "https://i.ibb.co/kMtj4mr/imageedit-25-8776907080.jpg",
+    "images": [
+      {
+        "high": "https://i.ibb.co/R68FLvz/pokedex-mockup.webp",
+        "low": "https://i.ibb.co/kMtj4mr/imageedit-25-8776907080.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/GML4dPt/image-1.png",
+        "low": "https://i.ibb.co/KbyqbVM/imageedit-49-6219733491.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/QKynJpP/image-2.png",
+        "low": "https://i.ibb.co/QNq5JkK/imageedit-52-3361977948.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/CBMGfy9/image-3.png",
+        "low": "https://i.ibb.co/3TYxXXF/imageedit-55-9538213422.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/n036kpR/image-4.png",
+        "low": "https://i.ibb.co/KNvv79d/imageedit-58-4986156593.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/M1JBcnd/image.png",
+        "low": "https://i.ibb.co/fNtmWx6/imageedit-46-2896712221.jpg"
+      }
+    ],
+    "type": "MPA",
+    "github": "https://github.com/JossDev-Morales/Pokedex",
+    "link": "https://master-pokedex.netlify.app/",
+    "stack": [
+      {
+        "title": "Java Script",
+        "route": "logos:javascript"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      },
+      {
+        "route": "vscode-icons:file-type-reactjs",
+        "title": "React"
+      },
+      {
+        "route": "logos:react-router",
+        "title": "React router"
+      },
+      {
+        "route": "simple-icons:axios",
+        "title": "Axios",
+        "color": "#5a29e4"
+      },
+      {
+        "route": "logos:redux",
+        "title": "Redux"
+      },
+      {
+        "route": "skill-icons:git",
+        "title": "Git"
+      }
+    ]
+  },
+  {
+    "id": "bcb25219-e2ac-4bf8-876c-9160007b7dcd",
+    "deployed": true,
+    "title": "Rick & Morty",
+    "description-es": "Una app para navegar en las diferentes dimensiones y planetas del fantastico universo de Rick & Morty.",
+    "description-en": "An app to navigate between the different dimensions and fantastic planets of the Rick & Morty's universe.",
+    "large-description-es": "Una aplicación donde puedes buscar los diferentes planetas y dimensiones de la serie de animacion Rick & Morty, con una interfaz intuitiva y agradable ademas de divertida, explora entre los personajes de cada dimension.",
+    "large-description-en": "An application where you can search for the different planets and dimensions of the animated series Rick & Morty, with an intuitive and pleasant interface as well as fun, explore the characters of each dimension.",
+    "image": "https://i.ibb.co/9TmXbrY/rickandmorty-mockup.webp",
+    "lowImage": "https://i.ibb.co/RQRn1mx/imageedit-2-7145036189.jpg",
+    "images": [
+      {
+        "high": "https://i.ibb.co/9TmXbrY/rickandmorty-mockup.webp",
+        "low": "https://i.ibb.co/RQRn1mx/imageedit-2-7145036189.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/KjN44qV/image-4.png",
+        "low": "https://i.ibb.co/VYxtZBv/imageedit-5-2803154997.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/8rp36Lb/image-2.png",
+        "low": "https://i.ibb.co/7bdBdSy/imageedit-11-4460185824.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/ZNzxk7C/image-1.png",
+        "low": "https://i.ibb.co/ssb4Fp3/imageedit-14-3956867968.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/3r02Bzd/image-3.png",
+        "low": "https://i.ibb.co/d75gYsn/imageedit-8-5623841777.jpg"
+      }
+    ],
+    "type": "SPA",
+    "github": "https://github.com/JossDev-Morales/Rick-And-Morty-App",
+    "link": "https://ricks-wiki.netlify.app/",
+    "stack": [
+      {
+        "route": "logos:javascript",
+        "title": "Java Script"
+      },
+      {
+        "route": "vscode-icons:file-type-reactjs",
+        "title": "React"
+      },
+      {
+        "color": "#5a29e4",
+        "route": "simple-icons:axios",
+        "title": "Axios"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      },
+      {
+        "route": "skill-icons:git",
+        "title": "Git"
+      }
+    ]
+  },
+  {
+    "id": "3eeed8e7-31ae-42a5-9ecb-14f6ddbaaad7",
+    "deployed": true,
+    "title": "Dashboard",
+    "description-es": "Una app que imita un dashboard de gestion de usuarios, con una interfaz muy creativa y esplendida para crear, editar y eliminar usuarios de una aplicacion.",
+    "description-en": "An application that imitates a user management dashboard, with a very creative and gorgeous interface to create, edit and delete users from an application.",
+    "large-description-es": "Una aplicación donde puedes tener control sobre los usuarios de una aplicacion, para poder gestionarlos, editarlos y eliminarlos, en un simple, hermoso y colorido dashboard, ten control sobre tus usuarios.",
+    "large-description-en": "An app where you can have control over the users of an app, to be able to manage, edit and delete them, in a simple, beautiful and colorful dashboard, have control over your users.",
+    "image": "https://i.ibb.co/Fw48YVt/dashboard-mockup.webp",
+    "lowImage": "https://i.ibb.co/T8RJw0b/imageedit-17-6270652313.jpg",
+    "images": [
+      {
+        "high": "https://i.ibb.co/Fw48YVt/dashboard-mockup.webp",
+        "low": "https://i.ibb.co/T8RJw0b/imageedit-17-6270652313.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/xF0fwQd/image-5.png",
+        "low": "https://i.ibb.co/X5wBSmJ/imageedit-29-9779161966.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/g9nTpMk/image-4.png",
+        "low": "https://i.ibb.co/61gnTxc/imageedit-26-4455506913.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/ZfnCVHR/image-2.png",
+        "low": "https://i.ibb.co/MgyFtkR/imageedit-23-3742022986.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/p2P1Frc/image-1.png",
+        "low": "https://i.ibb.co/h1vVCd5/imageedit-20-9038314226.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/cw6DBL3/image.png",
+        "low": "https://i.ibb.co/Y0yLP7Z/imageedit-32-4669205882.jpg"
+      }
+    ],
+    "type": "SPA",
+    "github": "https://github.com/JossDev-Morales/Users-Dashboard",
+    "link": "https://users-dashboard-project.netlify.app/",
+    "stack": [
+      {
+        "route": "logos:javascript",
+        "title": "Java Script"
+      },
+      {
+        "route": "vscode-icons:file-type-reactjs",
+        "title": "React"
+      },
+      {
+        "color": "#5a29e4",
+        "route": "simple-icons:axios",
+        "title": "Axios"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      },
+      {
+        "route": "skill-icons:git",
+        "title": "Git"
+      }
+    ]
+  },
+  {
+    "id": "a424e224-89c8-48c5-a2b2-985ebd1941f5",
+    "deployed": true,
+    "title": "Hot Pizza",
+    "description-es": "Una web que trata de imitar una tienda de pizzas en linea, con un sistema de usuarios basado en el objeto local storage.",
+    "description-en": "A website that tries to imitate an online pizza shop, with a user system based on the local storage object.",
+    "large-description-es": "Una pizzeria con un catalogo de productos a la venta con un sistema de usuarios en el local storage con el cual puedes registrarte, iniciar sesion y guardar tu carrito y likes.",
+    "large-description-en": "A pizzeria with a catalog of products for sale with a user system in the local storage with which you can register, log in and save your cart and likes.",
+    "image": "https://i.ibb.co/2nS3qvf/hotpizza-mockup.webp",
+    "lowImage": "https://i.ibb.co/SyD11xv/imageedit-35-7099137601.jpg",
+    "images": [
+      {
+        "high": "https://i.ibb.co/2nS3qvf/hotpizza-mockup.webp",
+        "low": "https://i.ibb.co/SyD11xv/imageedit-35-7099137601.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/wh10cQX/image-4.png",
+        "low": "https://i.ibb.co/HxdkBfc/imageedit-47-9925662616.jpg"
+      },
+      {
+        "high": "vhttps://i.ibb.co/WgXzxrJ/image-3.png",
+        "low": "https://i.ibb.co/4fvLWNZ/imageedit-53-6883453287.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/TTVLp83/image-1.png",
+        "low": "https://i.ibb.co/Byx9kzS/imageedit-38-6582312167.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/9pjD707/image.png",
+        "low": "https://i.ibb.co/Mhn7Gx6/imageedit-50-8605926298.jpg"
+      },
+      {
+        "high": "https://i.ibb.co/3BLYjhB/image-2.png",
+        "low": "https://i.ibb.co/mRyv00y/imageedit-41-3805636836.jpg"
+      }
+    ],
+    "type": "SPA",
+    "github": "https://github.com/JossDev-Morales/Acadamlo-Ecommerce",
+    "link": "https://commerce-hot.netlify.app/",
+    "stack": [
+      {
+        "route": "logos:javascript",
+        "title": "Java Script"
+      },
+      {
+        "route": "vscode-icons:file-type-css",
+        "title": "Css"
+      },
+      {
+        "route": "vscode-icons:file-type-html",
+        "title": "Html"
+      },
+      {
+        "route": "skill-icons:git",
+        "title": "Git"
+      }
+    ]
+  }
+]
