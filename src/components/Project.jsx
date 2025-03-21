@@ -19,7 +19,7 @@ function Project({ element }) {
     left: "left",
     right: "right",
   };
-  
+
   const slidePos = (direction) => {
     if (direction == directions.left) {
       if (sliderPosition == 0) {
@@ -109,15 +109,21 @@ function Project({ element }) {
           <Icon icon="uiw:github" width="25" color="#f0f6fc" /> <p>Github</p>
         </motion.a>
         <motion.a
-            animate={{ opacity: 0, transitionDuration: ".3s" }}
-            whileHover={{ scale: 1.05 }}
-            whileInView={{ opacity: 1 }}
-            href={element.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {element.deployed?currentData == "en" ? data.projects?.deploy.en : data.projects?.deploy.es:currentData=='en'?"Homepage":"Homepage"}
-          </motion.a>
+          animate={{ opacity: 0, transitionDuration: ".3s" }}
+          whileHover={{ scale: 1.05 }}
+          whileInView={{ opacity: 1 }}
+          href={element.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {element.deployed
+            ? currentData == "en"
+              ? data.projects?.deploy.en
+              : data.projects?.deploy.es
+            : currentData == "en"
+            ? "Homepage"
+            : "Homepage"}
+        </motion.a>
       </motion.div>
     );
   }
@@ -131,29 +137,45 @@ function Project({ element }) {
       >
         <div className="p_slider">
           <div className="p_slider_card">
-            <motion.div
-              onClick={() => {
-                slidePos(directions.left);
-              }}
-              animate={{ translateX: 0 }}
-              whileInView={{translateX:12}}
-              whileTap={{ scale: 1.1 }}
-              className="p_slider_arrow"
-            >
-              <FontAwesomeIcon icon={faChevronLeft} />
-            </motion.div>
-            <BlurImage src={element?.images[sliderPosition]?.high} lowSrc={element?.images[sliderPosition]?.low} config={{classWrapper:"p-img"}}/>
-            <motion.div
-              onClick={() => {
-                slidePos(directions.right);
-              }}
-              animate={{ translateX: 0 }}
-              whileInView={{translateX:-12}}
-              whileTap={{ scale: 1.1 }}
-              className="p_slider_arrow"
-            >
-              <FontAwesomeIcon icon={faChevronRight} />
-            </motion.div>
+            {element.images.length > 0 ? (
+              <>
+                <motion.div
+                  onClick={() => {
+                    slidePos(directions.left);
+                  }}
+                  animate={{ translateX: 0 }}
+                  whileInView={{ translateX: 12 }}
+                  whileTap={{ scale: 1.1 }}
+                  className="p_slider_arrow"
+                >
+                  <FontAwesomeIcon icon={faChevronLeft} />
+                </motion.div>
+                <BlurImage
+                  src={element?.images[sliderPosition]?.high}
+                  lowSrc={element?.images[sliderPosition]?.low}
+                  config={{ classWrapper: "p-img" }}
+                />
+                <motion.div
+                  onClick={() => {
+                    slidePos(directions.right);
+                  }}
+                  animate={{ translateX: 0 }}
+                  whileInView={{ translateX: -12 }}
+                  whileTap={{ scale: 1.1 }}
+                  className="p_slider_arrow"
+                >
+                  <FontAwesomeIcon icon={faChevronRight} />
+                </motion.div>
+              </>
+            ) : (
+              <>
+                <BlurImage
+                  src={element?.images[0]?.high}
+                  lowSrc={element?.images[0]?.low}
+                  config={{ classWrapper: "p-img" }}
+                />
+              </>
+            )}
           </div>
           <div className="project-techs_list">
             {element.stack.map((tech, i) => (
@@ -167,7 +189,10 @@ function Project({ element }) {
                 whileInView={{ translateX: 0, opacity: 1 }}
                 className="project_tech"
               >
-                <Icon icon={tech.route} color={tech.color?tech.color:"#fff"} />
+                <Icon
+                  icon={tech.route}
+                  color={tech.color ? tech.color : "#fff"}
+                />
               </motion.div>
             ))}
           </div>
@@ -213,9 +238,13 @@ function Project({ element }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {element.deployed?currentData == "en"
-              ? data.projects?.deploy.en
-              : data.projects?.deploy.es:currentData=='en'?"Homepage":"Homepage"}
+            {element.deployed
+              ? currentData == "en"
+                ? data.projects?.deploy.en
+                : data.projects?.deploy.es
+              : currentData == "en"
+              ? "Homepage"
+              : "Homepage"}
           </motion.a>
         </div>
       </motion.div>
